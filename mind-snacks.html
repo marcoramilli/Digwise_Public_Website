@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mind Snacks | Digwise Capital</title>
+    <meta name="description" content="Digwise Capital - Mind Snacks Magazine." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              digwise: {
+                black: '#0a0a0a',
+                dark: '#171717',
+                mid: '#525252',
+                light: '#a3a3a3',
+                white: '#fafafa',
+              }
+            },
+            animation: {
+              'blink': 'blink 1s step-end infinite',
+            },
+            keyframes: {
+              blink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #e5e5e5;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border: 1px solid #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+    </style>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="font-sans antialiased bg-digwise-black text-[#e5e5e5] min-h-screen relative pt-24 pb-16">
+    
+    <!-- Background overlay grid -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <!-- Horizontal lines -->
+      <div class="absolute inset-0 flex flex-col justify-between opacity-5">
+        <script>
+          for (let i = 0; i < 20; i++) {
+            document.write('<div class="w-full h-px bg-zinc-400"></div>');
+          }
+        </script>
+      </div>
+      <!-- Vertical lines -->
+      <div class="absolute inset-0 flex justify-between opacity-5">
+        <script>
+          for (let i = 0; i < 20; i++) {
+            document.write('<div class="w-px h-full bg-zinc-400"></div>');
+          }
+        </script>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-digwise-black/90 backdrop-blur-sm border-b border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center cursor-pointer group" onclick="window.location.href='/'">
+            <svg class="h-6 w-6 text-zinc-400 group-hover:text-white transition-colors mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            <div class="font-mono font-bold text-lg tracking-tighter text-white">
+              DIGWISE_CAPITAL<span class="animate-blink">_</span>
+            </div>
+          </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <button onclick="window.location.href='/index.html#HOME'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[01]</span>
+              <span>Home</span>
+            </button>
+            <button onclick="window.location.href='/index.html#ABOUT'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[02]</span>
+              <span>About</span>
+            </button>
+            <button onclick="window.location.href='/index.html#MISSION'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[03]</span>
+              <span>Mission</span>
+            </button>
+            <button onclick="window.location.href='/index.html#COMPANIES'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[04]</span>
+              <span>Companies</span>
+            </button>
+            <button onclick="window.location.href='/mind-snacks.html'" class="group flex items-center font-mono text-sm transition-all duration-300 text-white">
+              <span class="mr-2 text-xs text-zinc-400">[05]</span>
+              <span class="border-b border-white pb-0.5">Mind Snacks</span>
+            </button>
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <div class="md:hidden flex items-center" id="mobile-toggle">
+            <button class="space-y-1.5 cursor-pointer p-2 focus:outline-none">
+              <div class="w-6 h-0.5 bg-zinc-500"></div>
+              <div class="w-6 h-0.5 bg-zinc-500"></div>
+              <div class="w-4 h-0.5 bg-zinc-500"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu Items -->
+      <div class="hidden border-t border-zinc-900 bg-digwise-black py-2" id="mobile-menu">
+        <div class="flex flex-col space-y-2 px-4 py-2">
+          <button onclick="window.location.href='/index.html#HOME'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">HOME</button>
+          <button onclick="window.location.href='/index.html#ABOUT'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">ABOUT</button>
+          <button onclick="window.location.href='/index.html#MISSION'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">MISSION</button>
+          <button onclick="window.location.href='/index.html#COMPANIES'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">COMPANIES</button>
+          <button onclick="window.location.href='/mind-snacks.html'" class="text-left font-mono text-sm text-white font-bold py-1">MIND SNACKS</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      
+      <!-- Terminal header path decoration -->
+      <div class="mb-8 font-mono text-zinc-500 text-sm">
+        root@digwise:~/magazine$ ./load_mind_snacks.sh <span class="text-green-500">SUCCESS</span>
+      </div>
+
+      <!-- Hero header section -->
+      <div class="mb-16 border-b border-zinc-800 pb-10">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end">
+          <div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight font-sans mb-4">
+              MIND SNACKS
+            </h1>
+            <p class="text-zinc-400 font-mono text-sm max-w-xl">
+              Defragmenting complex ideas into bite-sized architectural insights. Updated periodically via custom automated data ingest pipelines.
+            </p>
+          </div>
+          <div class="mt-4 md:mt-0 font-mono text-xs text-zinc-500">
+            <span>INDEX_VER: 1.0.5</span><br>
+            <span>INGEST: data.csv</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading and Error State container -->
+      <div id="status-container" class="flex flex-col items-center justify-center py-20 font-mono text-zinc-500">
+        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-zinc-400 mb-4"></div>
+        <span>INITIATING_CSV_STREAM_FETCH...</span>
+      </div>
+
+      <!-- Cards Grid container -->
+      <div id="magazine-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hidden">
+        <!-- Dynamic content injected here -->
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-zinc-900 bg-digwise-black mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center text-zinc-600 font-mono text-xs gap-4">
+          <div>© 2026 DIGWISE CAPITAL. ALL RIGHTS RESERVED.</div>
+          <div class="flex space-x-6">
+            <a href="#" class="hover:text-zinc-400 transition-colors">X</a>
+            <a href="#" class="hover:text-zinc-400 transition-colors">LINKEDIN</a>
+            <a href="#" class="hover:text-zinc-400 transition-colors">PGP KEY</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+      // Toggle mobile menu
+      const toggleBtn = document.getElementById('mobile-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (toggleBtn && mobileMenu) {
+        toggleBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Robust CSV Parser (handles quotes and newlines)
+      function parseCSV(text) {
+        let lines = [];
+        let row = [""];
+        let inQuotes = false;
+        
+        for (let i = 0; i < text.length; i++) {
+          let c = text[i];
+          let next = text[i+1];
+          if (c === '"') {
+            if (inQuotes && next === '"') {
+              row[row.length - 1] += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (c === ',' && !inQuotes) {
+            row.push('');
+          } else if ((c === '\r' || c === '\n') && !inQuotes) {
+            if (c === '\r' && next === '\n') {
+              i++;
+            }
+            lines.push(row);
+            row = [''];
+          } else {
+            row[row.length - 1] += c;
+          }
+        }
+        if (row.length > 1 || row[0] !== '') {
+          lines.push(row);
+        }
+        
+        if (lines.length === 0) return [];
+        const headers = lines[0].map(h => h.trim().toLowerCase());
+        const data = [];
+        
+        for (let i = 1; i < lines.length; i++) {
+          const rowData = lines[i];
+          if (rowData.length === 1 && rowData[0] === '') continue;
+          const item = {};
+          headers.forEach((header, index) => {
+            item[header] = rowData[index] ? rowData[index].trim() : '';
+          });
+          data.push(item);
+        }
+        return data;
+      }
+
+      // Generate cyberpunk fallback SVG images based on article title
+      function getFallbackImage(title) {
+        const cleanTitle = title.replace(/['"<>]/g, ""); // sanitize
+        const colors = [
+          { bg: '#0d0d11', line: '#22c55e', accent: '#15803d' }, // neon green
+          { bg: '#0d0d11', line: '#3b82f6', accent: '#1d4ed8' }, // cyber blue
+          { bg: '#0d0d11', line: '#a855f7', accent: '#7e22ce' }, // techno purple
+          { bg: '#0d0d11', line: '#f97316', accent: '#c2410c' }  // amber orange
+        ];
+        
+        let hash = 0;
+        for (let i = 0; i < title.length; i++) {
+          hash = title.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        const theme = colors[Math.abs(hash) % colors.length];
+        
+        const svg = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+            <rect width="800" height="500" fill="${theme.bg}" />
+            <defs>
+              <pattern id="grid-${Math.abs(hash)}" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="${theme.line}" stroke-width="1" stroke-opacity="0.03" />
+              </pattern>
+            </defs>
+            <rect width="800" height="500" fill="url(#grid-${Math.abs(hash)})" />
+            <path d="M 100,100 L 200,100 L 250,150 L 550,150 L 600,200" fill="none" stroke="${theme.line}" stroke-width="1.5" stroke-opacity="0.3" />
+            <path d="M 200,400 L 300,400 L 350,350 L 450,350 L 500,300" fill="none" stroke="${theme.line}" stroke-width="1.5" stroke-opacity="0.2" />
+            <circle cx="250" cy="150" r="4" fill="${theme.line}" fill-opacity="0.6" />
+            <circle cx="550" cy="150" r="4" fill="${theme.line}" fill-opacity="0.6" />
+            <circle cx="350" cy="350" r="4" fill="${theme.line}" fill-opacity="0.4" />
+            <circle cx="400" cy="250" r="150" fill="${theme.accent}" fill-opacity="0.1" filter="blur(40px)" />
+            <text x="50" y="80" fill="${theme.line}" fill-opacity="0.15" font-family="monospace" font-size="12">01001101 01001001 01001110 01000100</text>
+            <text x="50" y="420" fill="${theme.line}" fill-opacity="0.15" font-family="monospace" font-size="12">01010011 01001110 01000001 01000011 01001011 01010011</text>
+            <text x="400" y="180" text-anchor="middle" fill="${theme.line}" fill-opacity="0.7" font-family="monospace" font-size="14" letter-spacing="4">DIGWISE_MIND_SNACK // 05</text>
+            <text x="400" y="270" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="28">
+              ${cleanTitle.length > 36 ? cleanTitle.substring(0, 34) + "..." : cleanTitle}
+            </text>
+            <line x1="370" y1="320" x2="430" y2="320" stroke="${theme.line}" stroke-width="3" />
+          </svg>
+        `;
+        return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svg.trim())))}`;
+      }
+
+      // Fetch and build the page content
+      async function loadMagazine() {
+        const grid = document.getElementById('magazine-grid');
+        const status = document.getElementById('status-container');
+        
+        try {
+          // Fetch data.csv (relative path)
+          const response = await fetch('/data.csv');
+          if (!response.ok) {
+            throw new Error(`HTTP Error fetching data.csv: status ${response.status}`);
+          }
+          
+          const text = await response.text();
+          const items = parseCSV(text);
+          
+          if (items.length === 0) {
+            status.innerHTML = `
+              <div class="text-yellow-500 mb-4 font-bold">WARNING: EMPTY_DATABASE_SIGNAL</div>
+              <span>No items found in data.csv. Please verify file integrity.</span>
+            `;
+            return;
+          }
+          
+          // Clear status, display grid
+          status.classList.add('hidden');
+          grid.classList.remove('hidden');
+          grid.innerHTML = '';
+          
+          // Build cards
+          items.forEach(item => {
+            // Support extensive columns listed by user:
+            // title, content, link, image, pubDate, dc:creator, creator, author, summary, id, content:encoded, content:encodedSnippet, contentSnippet, enclosure.url, etc.
+            const title = item.title || item.id || 'Untitled Snack';
+            
+            // Content prioritization
+            let content = item['content:encoded'] || item.content || item.summary || item['content:encodedsnippet'] || item.contentsnippet || 'No content provided for this record segment.';
+            
+            // If the content contains HTML, let's strip it to present a nice clean plaintext description
+            if (content.includes('<') && content.includes('>')) {
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = content;
+              content = tempDiv.textContent || tempDiv.innerText || content;
+            }
+            
+            // Link prioritization
+            const link = item.link || item.guid || item.id || '#';
+            
+            // Image prioritization (image or enclosure.url)
+            const imgUrl = item.image || item['enclosure.url'] || getFallbackImage(title);
+            
+            // Optional metadata: creator / author and publication date
+            const author = item['dc:creator'] || item.creator || item.author || '';
+            const pubDate = item.pubdate || item.isodate || '';
+            
+            // Meta string if present
+            let metaHtml = '';
+            if (author || pubDate) {
+              const parts = [];
+              if (author) parts.push(`BY_${author.toUpperCase()}`);
+              if (pubDate) {
+                try {
+                  const dateObj = new Date(pubDate);
+                  if (!isNaN(dateObj)) {
+                    parts.push(dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).toUpperCase());
+                  } else {
+                    parts.push(pubDate.toUpperCase());
+                  }
+                } catch(e) {
+                  parts.push(pubDate.toUpperCase());
+                }
+              }
+              metaHtml = `<div class="font-mono text-[10px] text-zinc-500 mb-2 tracking-wider">${parts.join(' // ')}</div>`;
+            }
+            
+            // Card design matching dimensions exactly using h-full, grid item sizing, and line-clamp
+            const cardHtml = `
+              <div class="flex flex-col h-full border border-zinc-800 bg-zinc-950/40 backdrop-blur-sm hover:border-zinc-500 transition-all duration-300 group rounded-none">
+                <!-- Image Container with rigid height aspect ratio -->
+                <div class="aspect-[16/10] w-full overflow-hidden bg-zinc-900 border-b border-zinc-800 relative">
+                  <img src="${imgUrl}" alt="${title}" 
+                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                       onerror="this.onerror=null; this.src=getFallbackImage('${title.replace(/'/g, "\\'")}');" />
+                  <div class="absolute top-3 left-3 bg-digwise-black/80 px-2 py-1 border border-zinc-800 font-mono text-[10px] text-zinc-500">
+                    SNACK_DATA
+                  </div>
+                </div>
+                
+                <!-- Content Container with flex grow and justify-between for dynamic alignment -->
+                <div class="flex flex-col flex-grow p-6 justify-between">
+                  <div class="mb-6">
+                    ${metaHtml}
+                    <h3 class="text-xl font-bold text-white mb-3 tracking-tight group-hover:text-zinc-300 transition-colors line-clamp-2">
+                      ${title}
+                    </h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-light line-clamp-4">
+                      ${content}
+                    </p>
+                  </div>
+                  
+                  <div class="flex items-center justify-between pt-4 border-t border-zinc-900">
+                    <a href="${link}" target="_blank" 
+                       class="inline-flex items-center text-xs font-mono text-zinc-400 hover:text-white group-hover:translate-x-1 transition-all">
+                      READ_FULL_SNACK_ <span class="ml-1 text-zinc-500 group-hover:text-white transition-colors">-></span>
+                    </a>
+                    <span class="font-mono text-[10px] text-zinc-600">LEN_${content.length}</span>
+                  </div>
+                </div>
+              </div>
+            `;
+            grid.insertAdjacentHTML('beforeend', cardHtml);
+          });
+          
+        } catch (error) {
+          console.error(error);
+          status.innerHTML = `
+            <div class="text-red-500 mb-4 font-bold font-mono">CRITICAL_SYSTEM_ERROR: MOUNT_FAILED</div>
+            <div class="text-zinc-400 max-w-md text-center text-xs border border-red-950/50 bg-red-950/10 p-4 font-mono">
+              ${error.message}<br><br>
+              RECONSTRUCTING PARSER CACHE STACK... [FAILED]
+            </div>
+          `;
+        }
+      }
+
+      // Load on document mount
+      window.addEventListener('DOMContentLoaded', loadMagazine);
+    </script>
+  </body>
+</html>
