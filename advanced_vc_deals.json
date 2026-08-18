@@ -1,0 +1,137 @@
+[
+    {
+        "startup": {
+            "name": "Sonic Fire Tech",
+            "nationality": "Sconosciuto",
+            "sector": "Industrial / Fire Protection",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Sconosciuto"
+        },
+        "deal_details": {
+            "round_type": "Venture",
+            "raised_amount_millions": 15.0,
+            "date": "2026-08"
+        },
+        "investors": [
+            {
+                "fund_name": "Sconosciuto",
+                "fund_nationality": "Sconosciuto",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://techcrunch.com/category/startups/"
+    },
+    {
+        "startup": {
+            "name": "Terra Industries",
+            "nationality": "Africa (Continentale)",
+            "sector": "Defense Tech",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Sconosciuto"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 18.0,
+            "date": "2026-08"
+        },
+        "investors": [
+            {
+                "fund_name": "Sconosciuto",
+                "fund_nationality": "Sconosciuto",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://techcrunch.com/category/startups/"
+    },
+    {
+        "startup": {
+            "name": "Dili",
+            "nationality": "USA",
+            "sector": "AI / Compliance",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Sconosciuto"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 15.0,
+            "date": "2026-08-11"
+        },
+        "investors": [
+            {
+                "fund_name": "Sconosciuto",
+                "fund_nationality": "Sconosciuto",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://theaiinsider.tech/2026/08/11/ai-compliance-startup-dili-announces-15m-series-a-to-tackle-infrastructure-regulatory-burden/"
+    },
+    {
+        "startup": {
+            "name": "Photon Queue",
+            "nationality": "USA (Champaign, IL)",
+            "sector": "Quantum Computing",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Sconosciuto"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 4.0,
+            "date": "2026-08"
+        },
+        "investors": [
+            {
+                "fund_name": "Sconosciuto",
+                "fund_nationality": "Sconosciuto",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://www.businesswire.com/newsroom/subject/funding"
+    },
+    {
+        "startup": {
+            "name": "Gravity",
+            "nationality": "USA (San Francisco, CA)",
+            "sector": "Advertising Tech / AI Agents",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Sconosciuto"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 30.5,
+            "date": "2026-08"
+        },
+        "investors": [
+            {
+                "fund_name": "Lightspeed Venture Partners",
+                "fund_nationality": "USA",
+                "fund_manager_involved": "Sconosciuto"
+            },
+            {
+                "fund_name": "Committed Capital",
+                "fund_nationality": "Sconosciuto",
+                "fund_manager_involved": "Sconosciuto"
+            },
+            {
+                "fund_name": "Basis Set",
+                "fund_nationality": "USA",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://www.finsmes.com/2026/08/gravity-raises-30-5m-in-series-a-funding.html"
+    }
+]
