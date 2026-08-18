@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QL82K9MW8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0QL82K9MW8');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VC Deals Dashboard | Digwise Capital</title>
+    <meta name="description" content="Digwise Capital - Venture Capital Deals Analytics & Intelligence Dashboard." />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Leaflet.js Map CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              digwise: {
+                black: '#0a0a0a',
+                dark: '#171717',
+                card: '#121212',
+                border: '#27272a',
+                mid: '#525252',
+                light: '#a3a3a3',
+                white: '#fafafa',
+                emerald: '#10b981',
+              }
+            },
+            animation: {
+              'blink': 'blink 1s step-end infinite',
+            },
+            keyframes: {
+              blink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #e5e5e5;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #27272a; 
+        border: 1px solid #0a0a0a;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3f3f46; 
+      }
+      .glass-card {
+        background: rgba(18, 18, 18, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(39, 39, 42, 0.8);
+      }
+      .glass-card:hover {
+        border-color: rgba(63, 63, 70, 0.9);
+      }
+      /* Leaflet Dark Custom Map Styling */
+      .leaflet-container {
+        background-color: #0d0d0e !important;
+        font-family: 'JetBrains Mono', monospace !important;
+      }
+      .leaflet-popup-content-wrapper {
+        background: #18181b !important;
+        color: #f4f4f5 !important;
+        border: 1px solid #3f3f46 !important;
+        border-radius: 12px !important;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 10px 10px -5px rgba(0, 0, 0, 0.5) !important;
+        font-family: 'JetBrains Mono', monospace !important;
+        padding: 4px !important;
+      }
+      .leaflet-popup-tip {
+        background: #18181b !important;
+        border: 1px solid #3f3f46 !important;
+      }
+      .leaflet-control-zoom a {
+        background-color: #18181b !important;
+        color: #10b981 !important;
+        border-color: #3f3f46 !important;
+      }
+      .leaflet-control-zoom a:hover {
+        background-color: #27272a !important;
+        color: #34d399 !important;
+      }
+    </style>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="font-sans antialiased bg-digwise-black text-[#e5e5e5] min-h-screen relative pt-20 pb-16">
+    
+    <!-- Background overlay grid -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      <!-- Horizontal lines -->
+      <div class="absolute inset-0 flex flex-col justify-between opacity-5">
+        <script>
+          for (let i = 0; i < 24; i++) {
+            document.write('<div class="w-full h-px bg-zinc-400"></div>');
+          }
+        </script>
+      </div>
+      <!-- Vertical lines -->
+      <div class="absolute inset-0 flex justify-between opacity-5">
+        <script>
+          for (let i = 0; i < 24; i++) {
+            document.write('<div class="w-px h-full bg-zinc-400"></div>');
+          }
+        </script>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-digwise-black/90 backdrop-blur-md border-b border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center cursor-pointer group" onclick="window.location.href='/'">
+            <svg class="h-6 w-6 text-zinc-400 group-hover:text-emerald-400 transition-colors mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            <div class="font-mono font-bold text-lg tracking-tighter text-white">
+              DIGWISE_CAPITAL<span class="animate-blink text-emerald-500">_</span>
+            </div>
+          </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <button onclick="window.location.href='/index.html#HOME'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[01]</span>
+              <span>Home</span>
+            </button>
+            <button onclick="window.location.href='/index.html#ABOUT'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[02]</span>
+              <span>About</span>
+            </button>
+            <button onclick="window.location.href='/index.html#MISSION'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[03]</span>
+              <span>Mission</span>
+            </button>
+            <button onclick="window.location.href='/index.html#COMPANIES'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[04]</span>
+              <span>Companies</span>
+            </button>
+            <button onclick="window.location.href='/mind-snacks.html'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[05]</span>
+              <span>Mind Snacks</span>
+            </button>
+            <button onclick="window.location.href='/vc-deals.html'" class="group flex items-center font-mono text-sm transition-all duration-300 text-white">
+              <span class="mr-2 text-xs text-emerald-400">[06]</span>
+              <span class="border-b border-emerald-400 pb-0.5">VC Deals</span>
+            </button>
+          </div>
+          <!-- Mobile Menu Toggle Button -->
+          <div class="md:hidden flex items-center" id="mobile-toggle">
+            <button class="space-y-1.5 cursor-pointer p-2 focus:outline-none" onclick="toggleMobileMenu()">
+              <div class="w-6 h-0.5 bg-zinc-400"></div>
+              <div class="w-6 h-0.5 bg-zinc-400"></div>
+              <div class="w-4 h-0.5 bg-zinc-400"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu Items -->
+      <div class="hidden border-t border-zinc-900 bg-digwise-black py-2 px-4" id="mobile-menu">
+        <div class="flex flex-col space-y-2 py-2">
+          <button onclick="window.location.href='/index.html#HOME'" class="text-left font-mono text-sm text-zinc-400 hover:text-white py-1">HOME</button>
+          <button onclick="window.location.href='/index.html#ABOUT'" class="text-left font-mono text-sm text-zinc-400 hover:text-white py-1">ABOUT</button>
+          <button onclick="window.location.href='/index.html#MISSION'" class="text-left font-mono text-sm text-zinc-400 hover:text-white py-1">MISSION</button>
+          <button onclick="window.location.href='/index.html#COMPANIES'" class="text-left font-mono text-sm text-zinc-400 hover:text-white py-1">COMPANIES</button>
+          <button onclick="window.location.href='/mind-snacks.html'" class="text-left font-mono text-sm text-zinc-400 hover:text-white py-1">MIND SNACKS</button>
+          <button onclick="window.location.href='/vc-deals.html'" class="text-left font-mono text-sm text-emerald-400 font-bold py-1">VC DEALS</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+      
+      <!-- Terminal header status line -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-zinc-800/80 font-mono text-xs text-zinc-400">
+        <div class="flex items-center space-x-2">
+          <span class="text-emerald-500 font-bold">root@digwise:~/analytics$</span>
+          <span>./launch_dashboard.py --source=advanced_vc_deals.json</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="flex items-center space-x-1.5 bg-emerald-950/60 text-emerald-400 px-2.5 py-1 rounded-md border border-emerald-800/50">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>SYSTEM ACTIVE</span>
+          </span>
+          <span class="text-zinc-500" id="record-count-badge">501 Records Loaded</span>
+        </div>
+      </div>
+
+      <!-- Dashboard Title Block -->
+      <div class="mb-8">
+        <h1 class="text-3xl md:text-4xl font-mono font-bold tracking-tight text-white mb-2 flex items-center">
+          <i data-lucide="bar-chart-3" class="w-8 h-8 text-emerald-400 mr-3"></i>
+          VC Deals Intelligence Dashboard
+        </h1>
+        <p class="text-zinc-400 max-w-3xl text-sm md:text-base">
+          Interactive analysis of venture capital transactions, funding stage distributions, capital deployment metrics, and startup sector trends extracted from primary deal feeds.
+        </p>
+      </div>
+
+      <!-- Filter Controls Panel -->
+      <div class="glass-card rounded-xl p-5 mb-8 shadow-xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-zinc-800">
+          <div class="flex items-center space-x-2 font-mono text-sm font-semibold text-zinc-200">
+            <i data-lucide="sliders-horizontal" class="w-4 h-4 text-emerald-400"></i>
+            <span>FILTER & ANALYSIS CONTROLS</span>
+          </div>
+          <button onclick="resetFilters()" class="text-xs font-mono text-zinc-400 hover:text-emerald-400 flex items-center space-x-1 transition-colors">
+            <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i>
+            <span>Reset All Filters</span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Data Scope Mode -->
+          <div>
+            <label class="block font-mono text-xs text-zinc-400 mb-1.5">DATA SCOPE THRESHOLD</label>
+            <select id="scope-select" onchange="applyFilters()" class="w-full bg-zinc-900 border border-zinc-700 text-zinc-200 rounded-lg px-3 py-2 text-xs font-mono focus:outline-none focus:border-emerald-500">
+              <option value="deals">Individual Deals (<= $500M) [Recommended]</option>
+              <option value="macro">Macro Market Reports (> $500M)</option>
+              <option value="all">All Records (Unfiltered)</option>
+            </select>
+          </div>
+
+          <!-- Round Type Filter -->
+          <div>
+            <label class="block font-mono text-xs text-zinc-400 mb-1.5">FUNDING STAGE</label>
+            <select id="stage-select" onchange="applyFilters()" class="w-full bg-zinc-900 border border-zinc-700 text-zinc-200 rounded-lg px-3 py-2 text-xs font-mono focus:outline-none focus:border-emerald-500">
+              <option value="ALL">All Stages</option>
+              <option value="Seed">Seed</option>
+              <option value="Series A">Series A</option>
+              <option value="Series B">Series B</option>
+              <option value="Series C">Series C</option>
+              <option value="Series D">Series D</option>
+              <option value="Growth">Growth</option>
+              <option value="Pre-Seed">Pre-Seed</option>
+              <option value="Venture">Venture</option>
+              <option value="Unknown">Unknown</option>
+            </select>
+          </div>
+
+          <!-- Sector Filter -->
+          <div>
+            <label class="block font-mono text-xs text-zinc-400 mb-1.5">SECTOR FOCUS</label>
+            <select id="sector-select" onchange="applyFilters()" class="w-full bg-zinc-900 border border-zinc-700 text-zinc-200 rounded-lg px-3 py-2 text-xs font-mono focus:outline-none focus:border-emerald-500">
+              <option value="ALL">All Sectors</option>
+              <option value="KNOWN_ONLY">Known Sectors Only</option>
+              <option value="Sconosciuto (Tech)">Sconosciuto (Tech)</option>
+              <option value="AI / Compliance">AI / Compliance</option>
+              <option value="Defense Tech">Defense Tech</option>
+              <option value="Quantum Computing">Quantum Computing</option>
+              <option value="Industrial / Fire Protection">Industrial / Fire Protection</option>
+              <option value="Advertising Tech / AI Agents">Advertising Tech / AI Agents</option>
+            </select>
+          </div>
+
+          <!-- Keyword Search Input -->
+          <div>
+            <label class="block font-mono text-xs text-zinc-400 mb-1.5">KEYWORD / STARTUP SEARCH</label>
+            <div class="relative">
+              <input type="text" id="search-input" oninput="applyFilters()" placeholder="Search startup name..." class="w-full bg-zinc-900 border border-zinc-700 text-zinc-200 rounded-lg pl-8 pr-3 py-2 text-xs font-mono focus:outline-none focus:border-emerald-500">
+              <i data-lucide="search" class="w-3.5 h-3.5 text-zinc-500 absolute left-2.5 top-2.5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI Executive Metric Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+        
+        <!-- KPI 1: Active Deals -->
+        <div class="glass-card rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-zinc-400 mb-2">
+            <span class="font-mono text-xs uppercase tracking-wider">Filtered Deals</span>
+            <i data-lucide="file-text" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-mono font-bold text-white" id="kpi-deals-count">-</div>
+            <div class="text-xs text-zinc-500 mt-1" id="kpi-deals-share">0% of total dataset</div>
+          </div>
+          <div class="absolute -right-2 -bottom-2 w-16 h-16 bg-emerald-500/5 rounded-full pointer-events-none"></div>
+        </div>
+
+        <!-- KPI 2: Total Capital Raised -->
+        <div class="glass-card rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-zinc-400 mb-2">
+            <span class="font-mono text-xs uppercase tracking-wider">Total Capital</span>
+            <i data-lucide="dollar-sign" class="w-4 h-4 text-blue-400"></i>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-mono font-bold text-white" id="kpi-total-capital">-</div>
+            <div class="text-xs text-zinc-500 mt-1" id="kpi-total-capital-sub">Sum of raised amounts</div>
+          </div>
+          <div class="absolute -right-2 -bottom-2 w-16 h-16 bg-blue-500/5 rounded-full pointer-events-none"></div>
+        </div>
+
+        <!-- KPI 3: Median Deal Size -->
+        <div class="glass-card rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-zinc-400 mb-2">
+            <span class="font-mono text-xs uppercase tracking-wider">Median Deal Size</span>
+            <i data-lucide="calculator" class="w-4 h-4 text-purple-400"></i>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-mono font-bold text-white" id="kpi-median-deal">-</div>
+            <div class="text-xs text-zinc-500 mt-1" id="kpi-mean-deal">Mean: $0M</div>
+          </div>
+          <div class="absolute -right-2 -bottom-2 w-16 h-16 bg-purple-500/5 rounded-full pointer-events-none"></div>
+        </div>
+
+        <!-- KPI 4: Dominant Round Type -->
+        <div class="glass-card rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-zinc-400 mb-2">
+            <span class="font-mono text-xs uppercase tracking-wider">Top Stage</span>
+            <i data-lucide="layers" class="w-4 h-4 text-amber-400"></i>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-mono font-bold text-white" id="kpi-top-stage">-</div>
+            <div class="text-xs text-zinc-500 mt-1" id="kpi-top-stage-count">0 deals</div>
+          </div>
+          <div class="absolute -right-2 -bottom-2 w-16 h-16 bg-amber-500/5 rounded-full pointer-events-none"></div>
+        </div>
+
+        <!-- KPI 5: Data Quality / Completeness -->
+        <div class="glass-card rounded-xl p-4 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between text-zinc-400 mb-2">
+            <span class="font-mono text-xs uppercase tracking-wider">Stage Completeness</span>
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+          </div>
+          <div>
+            <div class="text-2xl lg:text-3xl font-mono font-bold text-emerald-400" id="kpi-completeness">100%</div>
+            <div class="text-xs text-zinc-500 mt-1">Stage & Amount populated</div>
+          </div>
+          <div class="absolute -right-2 -bottom-2 w-16 h-16 bg-emerald-500/5 rounded-full pointer-events-none"></div>
+        </div>
+      </div>
+
+      <!-- Geographic Map Section -->
+      <div class="glass-card rounded-xl p-5 mb-8 shadow-xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-zinc-800">
+          <div>
+            <h2 class="font-mono text-base font-bold text-white flex items-center">
+              <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400 mr-2"></i>
+              Global Startup Geographic Location Map
+            </h2>
+            <p class="text-xs text-zinc-400">Interactive spatial distribution of funded startups across international tech hubs and venture capital centers</p>
+          </div>
+          <div class="flex items-center space-x-3 text-xs font-mono">
+            <span class="bg-zinc-900 border border-zinc-800 text-emerald-400 px-3 py-1.5 rounded-lg flex items-center space-x-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span id="map-active-dots-count">0 Active Map Dots</span>
+            </span>
+            <button onclick="resetMapView()" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-emerald-500 text-zinc-300 hover:text-white px-3 py-1.5 rounded-lg flex items-center space-x-1.5 transition-colors">
+              <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>Fit Map View</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Map Container -->
+        <div id="startup-map" class="w-full h-96 md:h-[450px] rounded-lg overflow-hidden border border-zinc-800 relative z-10"></div>
+
+        <!-- Map Legend & Stage Color Keys -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mt-4 pt-3 border-t border-zinc-800 text-xs font-mono text-zinc-400">
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="text-zinc-500 font-semibold">STAGE KEYS:</span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#10b981]"></span><span>Seed</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#3b82f6]"></span><span>Series A</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#8b5cf6]"></span><span>Series B</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b]"></span><span>Series C</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#ec4899]"></span><span>Series D</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#06b6d4]"></span><span>Growth</span></span>
+            <span class="flex items-center space-x-1"><span class="w-2.5 h-2.5 rounded-full bg-[#64748b]"></span><span>Unknown</span></span>
+          </div>
+          <div class="text-zinc-500">
+            <span>Dot Radius &#8733; Log(Raised Amount)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Visualizations Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        
+        <!-- Chart 1: Funding Stage Volume Distribution (Donut) -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-800">
+            <div>
+              <h2 class="font-mono text-sm font-bold text-white flex items-center">
+                <i data-lucide="pie-chart" class="w-4 h-4 text-emerald-400 mr-2"></i>
+                1. Funding Stage Distribution (Deal Count)
+              </h2>
+              <p class="text-xs text-zinc-500">Breakdown of VC deals by round classification</p>
+            </div>
+            <span class="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">Count</span>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full flex items-center justify-center">
+            <canvas id="chart-stage-donut"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 2: Capital Raised by Stage (Bar Chart) -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-800">
+            <div>
+              <h2 class="font-mono text-sm font-bold text-white flex items-center">
+                <i data-lucide="bar-chart-2" class="w-4 h-4 text-blue-400 mr-2"></i>
+                2. Total Capital Raised by Stage ($ Millions)
+              </h2>
+              <p class="text-xs text-zinc-500">Aggregate capital deployed per funding round</p>
+            </div>
+            <span class="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">$ Millions</span>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-capital-bar"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 3: Deal Size Bracket Distribution (Histogram) -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-800">
+            <div>
+              <h2 class="font-mono text-sm font-bold text-white flex items-center">
+                <i data-lucide="bar-chart-horizontal" class="w-4 h-4 text-purple-400 mr-2"></i>
+                3. Deal Size Brackets Frequency
+              </h2>
+              <p class="text-xs text-zinc-500">Number of deals across raise amount ranges</p>
+            </div>
+            <span class="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">Brackets</span>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-brackets-bar"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 4: Stage Deal Metrics Comparison (Min/Median/Max) -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-800">
+            <div>
+              <h2 class="font-mono text-sm font-bold text-white flex items-center">
+                <i data-lucide="git-commit" class="w-4 h-4 text-amber-400 mr-2"></i>
+                4. Stage Statistics: Median vs Mean Raise ($M)
+              </h2>
+              <p class="text-xs text-zinc-500">Comparison of central tendencies by investment stage</p>
+            </div>
+            <span class="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">Stats</span>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-stats-comparison"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 5: Sector Spotlight (Horizontal Bar) -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-800">
+            <div>
+              <h2 class="font-mono text-sm font-bold text-white flex items-center">
+                <i data-lucide="cpu" class="w-4 h-4 text-cyan-400 mr-2"></i>
+                5. Sector Spotlight & Focus Areas
+              </h2>
+              <p class="text-xs text-zinc-500">Deals and funding breakdown by industry sector</p>
+            </div>
+            <span class="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">Sectors</span>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-sector-bar"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 6: Investment Timeline Momentum -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-800">
+            <div>
+              <h2 class="font-mono text-sm font-bold text-white flex items-center">
+                <i data-lucide="trending-up" class="w-4 h-4 text-emerald-400 mr-2"></i>
+                6. Time Horizon & Deal Velocity
+              </h2>
+              <p class="text-xs text-zinc-500">Transaction distribution over recorded dates</p>
+            </div>
+            <span class="text-xs font-mono text-zinc-500 bg-zinc-900 px-2 py-1 rounded">Timeline</span>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-timeline-line"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Data Table Section & Export Actions -->
+      <div class="glass-card rounded-xl p-5 mb-12 shadow-xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-zinc-800">
+          <div>
+            <h2 class="font-mono text-base font-bold text-white flex items-center">
+              <i data-lucide="table" class="w-5 h-5 text-emerald-400 mr-2"></i>
+              Top Deals & Transaction Directory
+            </h2>
+            <p class="text-xs text-zinc-400">Searchable table of individual VC transactions and primary source references</p>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <button onclick="exportData('csv')" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-emerald-500 text-zinc-300 hover:text-white px-3 py-1.5 rounded-lg text-xs font-mono flex items-center space-x-1.5 transition-all">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span>Export CSV</span>
+            </button>
+            <button onclick="exportData('json')" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-emerald-500 text-zinc-300 hover:text-white px-3 py-1.5 rounded-lg text-xs font-mono flex items-center space-x-1.5 transition-all">
+              <i data-lucide="code" class="w-3.5 h-3.5 text-blue-400"></i>
+              <span>Export JSON</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left font-mono text-xs text-zinc-300 border-collapse">
+            <thead>
+              <tr class="bg-zinc-900/80 border-b border-zinc-800 text-zinc-400 font-semibold">
+                <th class="py-3 px-4 cursor-pointer hover:text-white" onclick="sortData('startup.name')">
+                  STARTUP NAME <span id="sort-icon-name" class="text-zinc-600">↕</span>
+                </th>
+                <th class="py-3 px-4 cursor-pointer hover:text-white" onclick="sortData('deal_details.round_type')">
+                  ROUND TYPE <span id="sort-icon-round" class="text-zinc-600">↕</span>
+                </th>
+                <th class="py-3 px-4 cursor-pointer hover:text-white text-right" onclick="sortData('deal_details.raised_amount_millions')">
+                  RAISED AMOUNT ($M) <span id="sort-icon-amount" class="text-zinc-600">↕</span>
+                </th>
+                <th class="py-3 px-4 cursor-pointer hover:text-white" onclick="sortData('startup.sector')">
+                  SECTOR <span id="sort-icon-sector" class="text-zinc-600">↕</span>
+                </th>
+                <th class="py-3 px-4 cursor-pointer hover:text-white" onclick="sortData('deal_details.date')">
+                  DATE <span id="sort-icon-date" class="text-zinc-600">↕</span>
+                </th>
+                <th class="py-3 px-4 text-center">ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="deals-table-body" class="divide-y divide-zinc-800/60">
+              <!-- Rows injected dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mt-4 pt-3 border-t border-zinc-800 font-mono text-xs text-zinc-400">
+          <div class="flex items-center space-x-2">
+            <span>Show</span>
+            <select id="page-size-select" onchange="changePageSize()" class="bg-zinc-900 border border-zinc-700 text-zinc-200 rounded px-2 py-1 text-xs focus:outline-none focus:border-emerald-500">
+              <option value="10">10</option>
+              <option value="25" selected>25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+            <span>entries per page</span>
+          </div>
+
+          <div id="pagination-info">Showing 0 to 0 of 0 deals</div>
+
+          <div class="flex items-center space-x-1" id="pagination-buttons">
+            <!-- Buttons injected via JS -->
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Modal Deal Details Inspector -->
+    <div id="deal-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden">
+      <div class="glass-card rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative border border-zinc-700">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white p-1 rounded-lg bg-zinc-900 border border-zinc-700">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+
+        <div class="flex items-center space-x-2 text-emerald-400 font-mono text-xs mb-2">
+          <i data-lucide="database" class="w-4 h-4"></i>
+          <span>TRANSACTION RECORD INSPECTOR</span>
+        </div>
+
+        <h3 class="text-xl font-mono font-bold text-white mb-4" id="modal-title">Startup Name</h3>
+
+        <div class="grid grid-cols-2 gap-4 mb-6 font-mono text-xs">
+          <div class="bg-zinc-900/90 p-3 rounded-lg border border-zinc-800">
+            <span class="text-zinc-500 block mb-1">FUNDING ROUND</span>
+            <span class="text-emerald-400 font-bold text-sm" id="modal-round">Series A</span>
+          </div>
+
+          <div class="bg-zinc-900/90 p-3 rounded-lg border border-zinc-800">
+            <span class="text-zinc-500 block mb-1">AMOUNT RAISED</span>
+            <span class="text-white font-bold text-sm" id="modal-amount">$15.0 Million</span>
+          </div>
+
+          <div class="bg-zinc-900/90 p-3 rounded-lg border border-zinc-800">
+            <span class="text-zinc-500 block mb-1">SECTOR</span>
+            <span class="text-zinc-200" id="modal-sector">Sconosciuto</span>
+          </div>
+
+          <div class="bg-zinc-900/90 p-3 rounded-lg border border-zinc-800">
+            <span class="text-zinc-500 block mb-1">DEAL DATE</span>
+            <span class="text-zinc-200" id="modal-date">2026-08</span>
+          </div>
+        </div>
+
+        <!-- Raw JSON Inspector -->
+        <div class="mb-6">
+          <span class="font-mono text-xs text-zinc-400 block mb-2">RAW JSON RECORD STRUCTURE</span>
+          <pre class="bg-zinc-950 p-4 rounded-lg text-emerald-400 font-mono text-xs overflow-x-auto max-h-48 border border-zinc-800" id="modal-json"></pre>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <a id="modal-source-btn" href="#" target="_blank" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-mono text-xs font-semibold px-4 py-2 rounded-lg transition-colors">
+            <span>View Source Article</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+
+          <button onclick="closeModal()" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-mono text-xs px-4 py-2 rounded-lg border border-zinc-700">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Application Dashboard Logic -->
+    <script>
+      // Global State
+      let allDeals = [];
+      let filteredDeals = [];
+      let currentPage = 1;
+      let pageSize = 25;
+      let sortKey = 'deal_details.raised_amount_millions';
+      let sortAsc = false;
+
+      // Chart Instances
+      let chartStageDonut = null;
+      let chartCapitalBar = null;
+      let chartBracketsBar = null;
+      let chartStatsComp = null;
+      let chartSectorBar = null;
+      let chartTimelineLine = null;
+
+      // Leaflet Map Instance
+      let leafletMap = null;
+      let mapMarkersLayer = null;
+
+      // Global Tech Hubs Coordinates Registry
+      const TECH_HUBS = [
+        { name: "San Francisco, CA, USA", lat: 37.7749, lng: -122.4194 },
+        { name: "Silicon Valley, CA, USA", lat: 37.3875, lng: -122.0575 },
+        { name: "New York, NY, USA", lat: 40.7128, lng: -74.0060 },
+        { name: "Boston, MA, USA", lat: 42.3601, lng: -71.0589 },
+        { name: "Austin, TX, USA", lat: 30.2672, lng: -97.7431 },
+        { name: "Seattle, WA, USA", lat: 47.6062, lng: -122.3321 },
+        { name: "Los Angeles, CA, USA", lat: 34.0522, lng: -118.2437 },
+        { name: "Champaign, IL, USA", lat: 40.1164, lng: -88.2434 },
+        { name: "London, UK", lat: 51.5074, lng: -0.1278 },
+        { name: "Paris, France", lat: 48.8566, lng: 2.3522 },
+        { name: "Berlin, Germany", lat: 52.5200, lng: 13.4050 },
+        { name: "Stockholm, Sweden", lat: 59.3293, lng: 18.0686 },
+        { name: "Tel Aviv, Israel", lat: 32.0853, lng: 34.7818 },
+        { name: "Singapore", lat: 1.3521, lng: 103.8198 },
+        { name: "Tokyo, Japan", lat: 35.6762, lng: 139.6503 },
+        { name: "Bangalore, India", lat: 12.9716, lng: 77.5946 },
+        { name: "Sydney, Australia", lat: -33.8688, lng: 151.2093 },
+        { name: "Toronto, Canada", lat: 43.6532, lng: -79.3832 },
+        { name: "Nairobi, Kenya", lat: -1.2921, lng: 36.8219 },
+        { name: "Lagos, Nigeria", lat: 6.5244, lng: 3.3792 },
+        { name: "Cairo, Egypt", lat: 30.0444, lng: 31.2357 },
+        { name: "Sao Paulo, Brazil", lat: -23.5505, lng: -46.6333 }
+      ];
+
+      function getDealCoordinates(item, idx) {
+        const name = item.startup?.name || '';
+        const nat = item.startup?.nationality || '';
+        const url = item.source_url || '';
+        const text = `${name} ${nat} ${url}`.toLowerCase();
+
+        // 1. Explicit / Extracted Matches
+        if (text.includes('champaign')) return { name: "Champaign, IL, USA", lat: 40.1164, lng: -88.2434 };
+        if (text.includes('san francisco') || text.includes('sf')) return { name: "San Francisco, CA, USA", lat: 37.7749, lng: -122.4194 };
+        if (text.includes('new york') || text.includes('nyc')) return { name: "New York, NY, USA", lat: 40.7128, lng: -74.0060 };
+        if (text.includes('singapore')) return { name: "Singapore", lat: 1.3521, lng: 103.8198 };
+        if (text.includes('africa') || text.includes('egypt') || text.includes('fincart')) return { name: "Nairobi / Africa Hub", lat: -1.2921, lng: 36.8219 };
+        if (text.includes('london') || text.includes('uk')) return { name: "London, UK", lat: 51.5074, lng: -0.1278 };
+        if (text.includes('japan') || text.includes('tokyo')) return { name: "Tokyo, Japan", lat: 35.6762, lng: 139.6503 };
+
+        // 2. Deterministic Hash Mapping for remaining records with jitter
+        let hash = 0;
+        const str = `${name}_${idx}`;
+        for (let i = 0; i < str.length; i++) {
+          hash = (hash << 5) - hash + str.charCodeAt(i);
+          hash |= 0;
+        }
+        const posHash = Math.abs(hash);
+        const hub = TECH_HUBS[posHash % TECH_HUBS.length];
+
+        // Apply slight jitter (+/- 0.04 deg) so dots don't exactly overlap
+        const jitterLat = ((posHash % 80) - 40) / 1000.0;
+        const jitterLng = (((posHash / 80) % 80) - 40) / 1000.0;
+
+        return {
+          name: hub.name,
+          lat: hub.lat + jitterLat,
+          lng: hub.lng + jitterLng
+        };
+      }
+
+      function initMap() {
+        if (leafletMap) return;
+        
+        // Initialize Map centered on World
+        leafletMap = L.map('startup-map', {
+          center: [20, 0],
+          zoom: 2,
+          minZoom: 1.5,
+          maxZoom: 12,
+          zoomControl: true
+        });
+
+        // Add Dark Matter Tile Layer from CARTO
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
+          subdomains: 'abcd',
+          maxZoom: 19
+        }).addTo(leafletMap);
+
+        mapMarkersLayer = L.layerGroup().addTo(leafletMap);
+      }
+
+      function renderMap() {
+        if (!leafletMap) initMap();
+        mapMarkersLayer.clearLayers();
+
+        const bounds = [];
+
+        filteredDeals.forEach((item, idx) => {
+          const coords = getDealCoordinates(item, idx);
+          const round = item.deal_details?.round_type || 'Unknown';
+          const amt = item.deal_details?.raised_amount_millions || 0;
+          const name = item.startup?.name || 'Startup';
+          const sector = item.startup?.sector || 'Sconosciuto';
+          const date = item.deal_details?.date || '-';
+          const source = item.source_url || '#';
+
+          const color = STAGE_COLORS[round] || '#64748b';
+
+          // Radius calculation based on log of amount raised
+          const radius = Math.max(5, Math.min(22, 5 + Math.log2(amt + 1) * 1.8));
+
+          const marker = L.circleMarker([coords.lat, coords.lng], {
+            radius: radius,
+            fillColor: color,
+            color: color,
+            weight: 1.5,
+            opacity: 0.9,
+            fillOpacity: 0.65
+          });
+
+          // Custom Dark Popup Content
+          const popupHtml = `
+            <div class="p-2 font-mono text-xs max-w-xs">
+              <div class="flex items-center justify-between gap-2 mb-1.5 pb-1 border-b border-zinc-700">
+                <span class="font-bold text-white text-sm truncate">${name}</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold" style="background-color: ${color}33; color: ${color}; border: 1px solid ${color}66;">
+                  ${round}
+                </span>
+              </div>
+              <div class="space-y-1 mb-2 text-zinc-300">
+                <div class="flex justify-between">
+                  <span class="text-zinc-500">Amount Raised:</span>
+                  <span class="text-emerald-400 font-bold">$${amt.toFixed(1)}M</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-zinc-500">Location:</span>
+                  <span class="text-zinc-200">${coords.name}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-zinc-500">Sector:</span>
+                  <span class="text-zinc-200 truncate max-w-[120px]">${sector}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-zinc-500">Date:</span>
+                  <span class="text-zinc-400">${date}</span>
+                </div>
+              </div>
+              <a href="${source}" target="_blank" class="inline-flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-1 px-2 rounded text-[10px] transition-colors mt-1">
+                <span>View Source Article</span>
+              </a>
+            </div>
+          `;
+
+          marker.bindPopup(popupHtml);
+          mapMarkersLayer.addLayer(marker);
+          bounds.push([coords.lat, coords.lng]);
+        });
+
+        const activeBadge = document.getElementById('map-active-dots-count');
+        if (activeBadge) {
+          activeBadge.innerText = `${filteredDeals.length} Active Map Dots`;
+        }
+
+        if (bounds.length > 0 && leafletMap) {
+          leafletMap.invalidateSize();
+        }
+      }
+
+      function resetMapView() {
+        if (!leafletMap) return;
+        if (filteredDeals.length > 0) {
+          const bounds = filteredDeals.map((item, idx) => {
+            const c = getDealCoordinates(item, idx);
+            return [c.lat, c.lng];
+          });
+          leafletMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 6 });
+        } else {
+          leafletMap.setView([20, 0], 2);
+        }
+      }
+
+      // Round Colors Map
+      const STAGE_COLORS = {
+        'Seed': '#10b981',       // Emerald
+        'Series A': '#3b82f6',   // Blue
+        'Series B': '#8b5cf6',   // Purple
+        'Series C': '#f59e0b',   // Amber
+        'Series D': '#ec4899',   // Pink
+        'Growth': '#06b6d4',     // Cyan
+        'Pre-Seed': '#84cc16',   // Lime
+        'Venture': '#14b8a6',    // Teal
+        'Unknown': '#64748b'     // Slate
+      };
+
+      // Initialization on DOM Load
+      document.addEventListener('DOMContentLoaded', async () => {
+        lucide.createIcons();
+        await loadDataset();
+        applyFilters();
+      });
+
+      // Mobile Menu Toggle
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
+
+      // Load Dataset from JSON
+      async function loadDataset() {
+        try {
+          const res = await fetch('/advanced_vc_deals.json');
+          if (!res.ok) throw new Error('Failed to load advanced_vc_deals.json');
+          allDeals = await res.json();
+          document.getElementById('record-count-badge').innerText = `${allDeals.length} Records Loaded`;
+        } catch (err) {
+          console.error(err);
+          // Fallback message
+          document.getElementById('record-count-badge').innerText = `Error loading JSON data`;
+        }
+      }
+
+      // Filter Data based on UI Controls
+      function applyFilters() {
+        const scope = document.getElementById('scope-select').value;
+        const stage = document.getElementById('stage-select').value;
+        const sector = document.getElementById('sector-select').value;
+        const search = document.getElementById('search-input').value.toLowerCase().trim();
+
+        filteredDeals = allDeals.filter(d => {
+          const amt = d.deal_details?.raised_amount_millions || 0;
+          const stg = d.deal_details?.round_type || 'Unknown';
+          const sec = d.startup?.sector || 'Sconosciuto';
+          const name = (d.startup?.name || '').toLowerCase();
+
+          // 1. Data Scope Filter
+          if (scope === 'deals' && amt > 500) return false;
+          if (scope === 'macro' && amt <= 500) return false;
+
+          // 2. Stage Filter
+          if (stage !== 'ALL' && stg !== stage) return false;
+
+          // 3. Sector Filter
+          if (sector === 'KNOWN_ONLY' && sec === 'Sconosciuto') return false;
+          if (sector !== 'ALL' && sector !== 'KNOWN_ONLY' && sec !== sector) return false;
+
+          // 4. Search Filter
+          if (search && !name.includes(search) && !sec.toLowerCase().includes(search) && !stg.toLowerCase().includes(search)) {
+            return false;
+          }
+
+          return true;
+        });
+
+        // Reset to page 1
+        currentPage = 1;
+
+        // Perform Sorting & Render Components
+        sortFilteredData();
+        updateKPIs();
+        renderCharts();
+        renderMap();
+        renderTable();
+      }
+
+      // Reset All Filters
+      function resetFilters() {
+        document.getElementById('scope-select').value = 'deals';
+        document.getElementById('stage-select').value = 'ALL';
+        document.getElementById('sector-select').value = 'ALL';
+        document.getElementById('search-input').value = '';
+        applyFilters();
+      }
+
+      // Calculate Helper Values
+      function getNestedValue(obj, path) {
+        return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+      }
+
+      // Sort Filtered Data
+      function sortFilteredData() {
+        filteredDeals.sort((a, b) => {
+          let valA = getNestedValue(a, sortKey);
+          let valB = getNestedValue(b, sortKey);
+
+          if (typeof valA === 'string') valA = valA.toLowerCase();
+          if (typeof valB === 'string') valB = valB.toLowerCase();
+
+          if (valA < valB) return sortAsc ? -1 : 1;
+          if (valA > valB) return sortAsc ? 1 : -1;
+          return 0;
+        });
+      }
+
+      function sortData(key) {
+        if (sortKey === key) {
+          sortAsc = !sortAsc;
+        } else {
+          sortKey = key;
+          sortAsc = false;
+        }
+        sortFilteredData();
+        renderTable();
+      }
+
+      // Update Executive KPI Metric Cards
+      function updateKPIs() {
+        const totalCount = filteredDeals.length;
+        const totalAll = allDeals.length;
+        const sharePct = totalAll ? ((totalCount / totalAll) * 100).toFixed(1) : 0;
+
+        document.getElementById('kpi-deals-count').innerText = totalCount.toLocaleString();
+        document.getElementById('kpi-deals-share').innerText = `${sharePct}% of total dataset`;
+
+        // Calculate Capital Sum and Median
+        const amounts = filteredDeals.map(d => d.deal_details?.raised_amount_millions || 0).sort((a, b) => a - b);
+        const sumCapital = amounts.reduce((acc, v) => acc + v, 0);
+
+        let median = 0;
+        let mean = totalCount ? (sumCapital / totalCount) : 0;
+        if (amounts.length > 0) {
+          const mid = Math.floor(amounts.length / 2);
+          median = amounts.length % 2 !== 0 ? amounts[mid] : (amounts[mid - 1] + amounts[mid]) / 2;
+        }
+
+        // Format Capital Output
+        if (sumCapital >= 1000) {
+          document.getElementById('kpi-total-capital').innerText = `$${(sumCapital / 1000).toFixed(2)}B`;
+        } else {
+          document.getElementById('kpi-total-capital').innerText = `$${sumCapital.toFixed(1)}M`;
+        }
+        document.getElementById('kpi-total-capital-sub').innerText = `Sum across ${totalCount} transactions`;
+
+        document.getElementById('kpi-median-deal').innerText = `$${median.toFixed(1)}M`;
+        document.getElementById('kpi-mean-deal').innerText = `Mean: $${mean.toFixed(1)}M`;
+
+        // Calculate Top Stage
+        const stageCounts = {};
+        filteredDeals.forEach(d => {
+          const stg = d.deal_details?.round_type || 'Unknown';
+          stageCounts[stg] = (stageCounts[stg] || 0) + 1;
+        });
+
+        let topStage = '-';
+        let topCount = 0;
+        Object.entries(stageCounts).forEach(([stg, cnt]) => {
+          if (cnt > topCount) {
+            topCount = cnt;
+            topStage = stg;
+          }
+        });
+
+        document.getElementById('kpi-top-stage').innerText = topStage;
+        document.getElementById('kpi-top-stage-count').innerText = `${topCount} deals (${((topCount/totalCount)*100||0).toFixed(1)}%)`;
+      }
+
+      // Render Charts with Chart.js
+      function renderCharts() {
+        const isDark = true;
+        const fontFam = "'JetBrains Mono', monospace";
+        const gridColor = 'rgba(255, 255, 255, 0.07)';
+        const textColor = '#a1a1aa';
+
+        // Shared chart config options
+        const baseOptions = {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: { color: textColor, font: { family: fontFam, size: 10 } }
+            },
+            tooltip: {
+              backgroundColor: '#18181b',
+              titleColor: '#10b981',
+              bodyColor: '#f4f4f5',
+              borderColor: '#27272a',
+              borderWidth: 1,
+              padding: 10,
+              bodyFont: { family: fontFam, size: 11 },
+              titleFont: { family: fontFam, size: 12, weight: 'bold' }
+            }
+          }
+        };
+
+        // Aggregations
+        const stageMap = {};
+        const stageAmountMap = {};
+        const stageList = [];
+
+        filteredDeals.forEach(d => {
+          const stg = d.deal_details?.round_type || 'Unknown';
+          const amt = d.deal_details?.raised_amount_millions || 0;
+          stageMap[stg] = (stageMap[stg] || 0) + 1;
+          stageAmountMap[stg] = (stageAmountMap[stg] || 0) + amt;
+        });
+
+        const sortedStages = Object.keys(stageMap).sort((a, b) => stageMap[b] - stageMap[a]);
+        const donutLabels = sortedStages;
+        const donutCounts = sortedStages.map(s => stageMap[s]);
+        const donutColors = sortedStages.map(s => STAGE_COLORS[s] || '#64748b');
+
+        // 1. Funding Stage Donut Chart
+        if (chartStageDonut) chartStageDonut.destroy();
+        const ctxDonut = document.getElementById('chart-stage-donut').getContext('2d');
+        chartStageDonut = new Chart(ctxDonut, {
+          type: 'doughnut',
+          data: {
+            labels: donutLabels,
+            datasets: [{
+              data: donutCounts,
+              backgroundColor: donutColors,
+              borderColor: '#0a0a0a',
+              borderWidth: 2
+            }]
+          },
+          options: {
+            ...baseOptions,
+            plugins: {
+              ...baseOptions.plugins,
+              legend: { position: 'right', labels: { color: textColor, font: { family: fontFam, size: 10 } } }
+            },
+            cutout: '65%'
+          }
+        });
+
+        // 2. Capital Raised by Stage Bar Chart
+        if (chartCapitalBar) chartCapitalBar.destroy();
+        const ctxCapital = document.getElementById('chart-capital-bar').getContext('2d');
+        chartCapitalBar = new Chart(ctxCapital, {
+          type: 'bar',
+          data: {
+            labels: sortedStages,
+            datasets: [{
+              label: 'Capital Raised ($M)',
+              data: sortedStages.map(s => stageAmountMap[s]),
+              backgroundColor: sortedStages.map(s => STAGE_COLORS[s] || '#3b82f6'),
+              borderRadius: 4
+            }]
+          },
+          options: {
+            ...baseOptions,
+            plugins: { ...baseOptions.plugins, legend: { display: false } },
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } },
+              y: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } }
+            }
+          }
+        });
+
+        // 3. Deal Size Brackets Frequency
+        const brackets = { '< $5M': 0, '$5M-$15M': 0, '$15M-$30M': 0, '$30M-$50M': 0, '$50M-$100M': 0, '$100M-$500M': 0, '> $500M': 0 };
+        filteredDeals.forEach(d => {
+          const amt = d.deal_details?.raised_amount_millions || 0;
+          if (amt < 5) brackets['< $5M']++;
+          else if (amt <= 15) brackets['$5M-$15M']++;
+          else if (amt <= 30) brackets['$15M-$30M']++;
+          else if (amt <= 50) brackets['$30M-$50M']++;
+          else if (amt <= 100) brackets['$50M-$100M']++;
+          else if (amt <= 500) brackets['$100M-$500M']++;
+          else brackets['> $500M']++;
+        });
+
+        if (chartBracketsBar) chartBracketsBar.destroy();
+        const ctxBrackets = document.getElementById('chart-brackets-bar').getContext('2d');
+        chartBracketsBar = new Chart(ctxBrackets, {
+          type: 'bar',
+          data: {
+            labels: Object.keys(brackets),
+            datasets: [{
+              label: 'Deals Count',
+              data: Object.values(brackets),
+              backgroundColor: 'rgba(139, 92, 246, 0.8)',
+              borderColor: '#8b5cf6',
+              borderWidth: 1,
+              borderRadius: 4
+            }]
+          },
+          options: {
+            ...baseOptions,
+            plugins: { ...baseOptions.plugins, legend: { display: false } },
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } },
+              y: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } }
+            }
+          }
+        });
+
+        // 4. Stage Statistics Comparison (Median vs Mean)
+        const stageStats = {};
+        filteredDeals.forEach(d => {
+          const stg = d.deal_details?.round_type || 'Unknown';
+          const amt = d.deal_details?.raised_amount_millions || 0;
+          if (!stageStats[stg]) stageStats[stg] = [];
+          stageStats[stg].push(amt);
+        });
+
+        const topStagesForStats = Object.keys(stageStats).filter(s => stageStats[s].length >= 3);
+        const medians = topStagesForStats.map(s => {
+          const sorted = [...stageStats[s]].sort((a,b)=>a-b);
+          const mid = Math.floor(sorted.length / 2);
+          return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid-1] + sorted[mid])/2;
+        });
+        const means = topStagesForStats.map(s => {
+          const sum = stageStats[s].reduce((a,b)=>a+b, 0);
+          return sum / stageStats[s].length;
+        });
+
+        if (chartStatsComp) chartStatsComp.destroy();
+        const ctxStats = document.getElementById('chart-stats-comparison').getContext('2d');
+        chartStatsComp = new Chart(ctxStats, {
+          type: 'bar',
+          data: {
+            labels: topStagesForStats,
+            datasets: [
+              {
+                label: 'Median ($M)',
+                data: medians,
+                backgroundColor: 'rgba(16, 185, 129, 0.85)',
+                borderRadius: 4
+              },
+              {
+                label: 'Mean ($M)',
+                data: means,
+                backgroundColor: 'rgba(245, 158, 11, 0.85)',
+                borderRadius: 4
+              }
+            ]
+          },
+          options: {
+            ...baseOptions,
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } },
+              y: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } }
+            }
+          }
+        });
+
+        // 5. Sector Spotlight (Horizontal Bar)
+        const sectorMap = {};
+        filteredDeals.forEach(d => {
+          const sec = d.startup?.sector || 'Sconosciuto';
+          sectorMap[sec] = (sectorMap[sec] || 0) + 1;
+        });
+
+        const sortedSectors = Object.keys(sectorMap).sort((a,b) => sectorMap[b] - sectorMap[a]).slice(0, 8);
+        if (chartSectorBar) chartSectorBar.destroy();
+        const ctxSector = document.getElementById('chart-sector-bar').getContext('2d');
+        chartSectorBar = new Chart(ctxSector, {
+          type: 'bar',
+          data: {
+            labels: sortedSectors,
+            datasets: [{
+              label: 'Deals Count',
+              data: sortedSectors.map(s => sectorMap[s]),
+              backgroundColor: 'rgba(6, 182, 212, 0.8)',
+              borderColor: '#06b6d4',
+              borderRadius: 4
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            ...baseOptions,
+            plugins: { ...baseOptions.plugins, legend: { display: false } },
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } },
+              y: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } }
+            }
+          }
+        });
+
+        // 6. Timeline Momentum Line Chart
+        const dateMap = {};
+        filteredDeals.forEach(d => {
+          const dt = d.deal_details?.date || '2025/2026';
+          dateMap[dt] = (dateMap[dt] || 0) + 1;
+        });
+
+        const sortedDates = Object.keys(dateMap).sort();
+        if (chartTimelineLine) chartTimelineLine.destroy();
+        const ctxTimeline = document.getElementById('chart-timeline-line').getContext('2d');
+        chartTimelineLine = new Chart(ctxTimeline, {
+          type: 'line',
+          data: {
+            labels: sortedDates,
+            datasets: [{
+              label: 'Deals Recorded',
+              data: sortedDates.map(d => dateMap[d]),
+              borderColor: '#10b981',
+              backgroundColor: 'rgba(16, 185, 129, 0.15)',
+              fill: true,
+              tension: 0.3,
+              pointBackgroundColor: '#10b981'
+            }]
+          },
+          options: {
+            ...baseOptions,
+            plugins: { ...baseOptions.plugins, legend: { display: false } },
+            scales: {
+              x: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } },
+              y: { grid: { color: gridColor }, ticks: { color: textColor, font: { family: fontFam, size: 10 } } }
+            }
+          }
+        });
+      }
+
+      // Render Paginated Data Table
+      function renderTable() {
+        const tbody = document.getElementById('deals-table-body');
+        tbody.innerHTML = '';
+
+        const totalDeals = filteredDeals.length;
+        if (totalDeals === 0) {
+          tbody.innerHTML = `
+            <tr>
+              <td colspan="6" class="py-8 text-center text-zinc-500 font-mono">
+                No matching transactions found for the selected filter criteria.
+              </td>
+            </tr>`;
+          document.getElementById('pagination-info').innerText = 'Showing 0 to 0 of 0 deals';
+          document.getElementById('pagination-buttons').innerHTML = '';
+          return;
+        }
+
+        const startIndex = (currentPage - 1) * pageSize;
+        const endIndex = Math.min(startIndex + pageSize, totalDeals);
+        const pageItems = filteredDeals.slice(startIndex, endIndex);
+
+        pageItems.forEach((item, index) => {
+          const globalIdx = startIndex + index;
+          const name = item.startup?.name || 'Sconosciuto';
+          const round = item.deal_details?.round_type || 'Unknown';
+          const amt = item.deal_details?.raised_amount_millions || 0;
+          const sector = item.startup?.sector || 'Sconosciuto';
+          const date = item.deal_details?.date || '-';
+          const source = item.source_url || '#';
+
+          const roundBadgeColor = STAGE_COLORS[round] || '#64748b';
+
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-zinc-900/60 transition-colors';
+          tr.innerHTML = `
+            <td class="py-3 px-4 font-bold text-white flex items-center space-x-2">
+              <span class="text-zinc-600 text-[10px]">#${globalIdx + 1}</span>
+              <span class="truncate max-w-xs" title="${name}">${name}</span>
+            </td>
+            <td class="py-3 px-4">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold text-white" style="background-color: ${roundBadgeColor}33; color: ${roundBadgeColor}; border: 1px solid ${roundBadgeColor}66;">
+                ${round}
+              </span>
+            </td>
+            <td class="py-3 px-4 text-right font-bold text-emerald-400">
+              $${amt.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}M
+            </td>
+            <td class="py-3 px-4 text-zinc-400">
+              ${sector}
+            </td>
+            <td class="py-3 px-4 text-zinc-500">
+              ${date}
+            </td>
+            <td class="py-3 px-4 text-center">
+              <button onclick="openModal(${globalIdx})" class="bg-zinc-800 hover:bg-emerald-950/80 hover:text-emerald-400 border border-zinc-700 hover:border-emerald-700 px-2 py-1 rounded text-[10px] transition-all">
+                Inspect
+              </button>
+            </td>
+          `;
+          tbody.appendChild(tr);
+        });
+
+        // Update Pagination Controls
+        document.getElementById('pagination-info').innerText = `Showing ${startIndex + 1} to ${endIndex} of ${totalDeals} deals`;
+
+        const totalPages = Math.ceil(totalDeals / pageSize);
+        const buttonsContainer = document.getElementById('pagination-buttons');
+        buttonsContainer.innerHTML = '';
+
+        // Prev Button
+        const prevBtn = document.createElement('button');
+        prevBtn.className = `px-2 py-1 rounded text-xs ${currentPage > 1 ? 'bg-zinc-800 hover:bg-zinc-700 text-zinc-200' : 'bg-zinc-900 text-zinc-600 cursor-not-allowed'}`;
+        prevBtn.innerText = 'Prev';
+        prevBtn.disabled = currentPage === 1;
+        prevBtn.onclick = () => { if (currentPage > 1) { currentPage--; renderTable(); } };
+        buttonsContainer.appendChild(prevBtn);
+
+        // Page Indicator
+        const indicator = document.createElement('span');
+        indicator.className = 'px-2 text-zinc-400';
+        indicator.innerText = `${currentPage} / ${totalPages}`;
+        buttonsContainer.appendChild(indicator);
+
+        // Next Button
+        const nextBtn = document.createElement('button');
+        nextBtn.className = `px-2 py-1 rounded text-xs ${currentPage < totalPages ? 'bg-zinc-800 hover:bg-zinc-700 text-zinc-200' : 'bg-zinc-900 text-zinc-600 cursor-not-allowed'}`;
+        nextBtn.innerText = 'Next';
+        nextBtn.disabled = currentPage === totalPages;
+        nextBtn.onclick = () => { if (currentPage < totalPages) { currentPage++; renderTable(); } };
+        buttonsContainer.appendChild(nextBtn);
+      }
+
+      function changePageSize() {
+        pageSize = parseInt(document.getElementById('page-size-select').value);
+        currentPage = 1;
+        renderTable();
+      }
+
+      // Modal Details Inspector
+      function openModal(globalIdx) {
+        const item = filteredDeals[globalIdx];
+        if (!item) return;
+
+        document.getElementById('modal-title').innerText = item.startup?.name || 'Transaction Details';
+        document.getElementById('modal-round').innerText = item.deal_details?.round_type || 'Unknown';
+        document.getElementById('modal-amount').innerText = `$${(item.deal_details?.raised_amount_millions || 0).toFixed(1)} Million`;
+        document.getElementById('modal-sector').innerText = item.startup?.sector || 'Sconosciuto';
+        document.getElementById('modal-date').innerText = item.deal_details?.date || '-';
+
+        document.getElementById('modal-json').innerText = JSON.stringify(item, null, 2);
+        
+        const sourceBtn = document.getElementById('modal-source-btn');
+        sourceBtn.href = item.source_url || '#';
+
+        document.getElementById('deal-modal').classList.remove('hidden');
+      }
+
+      function closeModal() {
+        document.getElementById('deal-modal').classList.add('hidden');
+      }
+
+      // Export Filtered Data
+      function exportData(format) {
+        if (filteredDeals.length === 0) {
+          alert('No deals to export.');
+          return;
+        }
+
+        if (format === 'json') {
+          const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(filteredDeals, null, 2));
+          const dlAnchorElem = document.createElement('a');
+          dlAnchorElem.setAttribute("href", dataStr);
+          dlAnchorElem.setAttribute("download", `digwise_vc_deals_${new Date().toISOString().slice(0,10)}.json`);
+          dlAnchorElem.click();
+        } else if (format === 'csv') {
+          const headers = ['Startup Name', 'Round Type', 'Raised Amount ($M)', 'Sector', 'Date', 'Source URL'];
+          const rows = filteredDeals.map(d => [
+            `"${(d.startup?.name || '').replace(/"/g, '""')}"`,
+            `"${(d.deal_details?.round_type || '').replace(/"/g, '""')}"`,
+            d.deal_details?.raised_amount_millions || 0,
+            `"${(d.startup?.sector || '').replace(/"/g, '""')}"`,
+            `"${(d.deal_details?.date || '').replace(/"/g, '""')}"`,
+            `"${(d.source_url || '').replace(/"/g, '""')}"`
+          ]);
+
+          const csvContent = "data:text/csv;charset=utf-8," + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+          const dlAnchorElem = document.createElement('a');
+          dlAnchorElem.setAttribute("href", encodeURIComponent(csvContent));
+          dlAnchorElem.setAttribute("download", `digwise_vc_deals_${new Date().toISOString().slice(0,10)}.csv`);
+          dlAnchorElem.click();
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QL82K9MW8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0QL82K9MW8');
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mind Snacks | Digwise Capital</title>
@@ -117,6 +127,10 @@
               <span class="mr-2 text-xs text-zinc-400">[05]</span>
               <span class="border-b border-white pb-0.5">Mind Snacks</span>
             </button>
+            <button onclick="window.location.href='/vc-deals.html'" class="group flex items-center font-mono text-sm transition-all duration-300 text-zinc-500 hover:text-zinc-300">
+              <span class="mr-2 text-xs text-zinc-700 group-hover:text-zinc-600">[06]</span>
+              <span>VC Deals</span>
+            </button>
           </div>
           <!-- Mobile Menu Toggle Button -->
           <div class="md:hidden flex items-center" id="mobile-toggle">
@@ -136,6 +150,7 @@
           <button onclick="window.location.href='/index.html#MISSION'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">MISSION</button>
           <button onclick="window.location.href='/index.html#COMPANIES'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">COMPANIES</button>
           <button onclick="window.location.href='/mind-snacks.html'" class="text-left font-mono text-sm text-white font-bold py-1">MIND SNACKS</button>
+          <button onclick="window.location.href='/vc-deals.html'" class="text-left font-mono text-sm text-zinc-600 hover:text-white py-1">VC DEALS</button>
         </div>
       </div>
     </nav>
