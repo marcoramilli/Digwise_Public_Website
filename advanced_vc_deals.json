@@ -1,6 +1,111 @@
 [
     {
         "startup": {
+            "name": "Dog Heroes",
+            "nationality": "Italia",
+            "sector": "Pet Tech",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Marco Laganà",
+            "founder_or_ceo_nationality": "Italia"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 5.0,
+            "date": "2025/2026"
+        },
+        "investors": [
+            {
+                "fund_name": "VC Partners SGR",
+                "fund_nationality": "Italia",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://www.startupbusiness.it"
+    },
+    {
+        "startup": {
+            "name": "Niulinx",
+            "nationality": "Italia",
+            "sector": "Mobilità / Guida Autonoma",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Italia"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 38.0,
+            "date": "2026-04"
+        },
+        "investors": [
+            {
+                "fund_name": "A2a",
+                "fund_nationality": "Italia",
+                "fund_manager_involved": "Sconosciuto"
+            },
+            {
+                "fund_name": "CDP Venture Capital",
+                "fund_nationality": "Italia",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://www.ilsole24ore.com"
+    },
+    {
+        "startup": {
+            "name": "Isaac",
+            "nationality": "Italia",
+            "sector": "Deep Tech / Protezione Antisismica",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Sconosciuto",
+            "founder_or_ceo_nationality": "Italia"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 14.0,
+            "date": "2026-03"
+        },
+        "investors": [
+            {
+                "fund_name": "CDP Venture Capital",
+                "fund_nationality": "Italia",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://www.repubblica.it"
+    },
+    {
+        "startup": {
+            "name": "IdentifAI",
+            "nationality": "Italia",
+            "sector": "Cybersecurity / AI",
+            "estimated_revenue_at_investment": "Sconosciuto"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Marco Ramilli",
+            "founder_or_ceo_nationality": "Italia"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 5.0,
+            "date": "2025/2026"
+        },
+        "investors": [
+            {
+                "fund_name": "United Ventures",
+                "fund_nationality": "Italia",
+                "fund_manager_involved": "Sconosciuto"
+            }
+        ],
+        "source_url": "https://www.startupbusiness.it/nuovo-round-per-identifai-5-milioni-di-euro-raccolti-da-united-ventures/"
+    },
+    {
+        "startup": {
             "name": "Sonic Fire Tech",
             "nationality": "Sconosciuto",
             "sector": "Industrial / Fire Protection",
