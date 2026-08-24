@@ -17588,5 +17588,55 @@
             }
         ],
         "source_url": "https://en.wikipedia.org/wiki/List_of_highest-funded_crowdfunding_projects"
+    },
+    {
+        "startup": {
+            "name": "Aramco Ventures Co",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 20.0,
+            "date": "2026-08-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://cairoscene.com/Business/Aramco-Ventures-Co-Leads-20-Million-Seed-Round-in-Twin1-AI"
+    },
+    {
+        "startup": {
+            "name": "Be Clinical",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 2.2,
+            "date": "2026-08-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://bharatfast.com/english/start-up/funding/be-clinical-raises-rs-21-crore-in-seed-extension-round-led-by-sauce/34147/"
     }
 ]
