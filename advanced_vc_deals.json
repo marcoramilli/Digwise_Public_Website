@@ -19288,5 +19288,30 @@
             }
         ],
         "source_url": "https://www.techloy.com/africa-middle-east-startup-funding-week-35-2026/"
+    },
+    {
+        "startup": {
+            "name": "Quaise Energy",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 180.0,
+            "date": "2026-08-30"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://superbcrew.com/quaise-energy-raises-180-million-in-series-b-funding/"
     }
 ]
