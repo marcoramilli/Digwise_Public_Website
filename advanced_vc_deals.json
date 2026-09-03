@@ -19813,5 +19813,205 @@
             }
         ],
         "source_url": "https://www.aerotime.aero/"
+    },
+    {
+        "startup": {
+            "name": "Medici Brands",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 250.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.prnewswire.com/news-releases/medici-brands-raises-250-million-in-series-b-funding-302867137.html"
+    },
+    {
+        "startup": {
+            "name": "8,815 Series",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 2.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.vcbacked.co/directory/funding/series-a/page/197"
+    },
+    {
+        "startup": {
+            "name": "Novago Therapeutics",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 30.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.finsmes.com/2026/09/novago-therapeutics-raises-30m-in-series-b-funding.html"
+    },
+    {
+        "startup": {
+            "name": "Ai Startup Wonderful",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 550.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.cryptopolitan.com/wonderful-550m-double-valuation-5-billion/"
+    },
+    {
+        "startup": {
+            "name": "Hibob",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 166.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thesaasnews.com/news/hibob-raises-166m-other/"
+    },
+    {
+        "startup": {
+            "name": "Afterquery",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 3200.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.gate.com/news/detail/afterquery-raises-funding-at-32b-valuation-10x-growth-in-five-months-since-23938407"
+    },
+    {
+        "startup": {
+            "name": "Augmenta Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 10.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://tracxn.com/d/companies/augmenta-ai/__xe8FokQJsTF0oci2bxJ-iHsmBVqZDxH1oUfcaWIXH_4"
+    },
+    {
+        "startup": {
+            "name": "Global Startup",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 84.0,
+            "date": "2026-09-03"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://startupgenome.com/report/the-global-startup-ecosystem-report-2026/state-of-the-global-startup-economy"
     }
 ]
