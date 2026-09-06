@@ -20313,5 +20313,30 @@
             }
         ],
         "source_url": "https://serrarigroup.com/kenya-startup-funding-falls-as-local-capital-stays-low/"
+    },
+    {
+        "startup": {
+            "name": "Crypto Vc",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 292.0,
+            "date": "2026-09-06"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://en.cryptonomist.ch/2026/09/05/crypto-vc-funding-payments-banking/"
     }
 ]
