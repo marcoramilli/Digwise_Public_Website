@@ -20158,5 +20158,55 @@
             }
         ],
         "source_url": "https://sifted.eu/articles/telli-ai-seed/"
+    },
+    {
+        "startup": {
+            "name": "24,242 Seed",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 0.5,
+            "date": "2026-09-07"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.vcbacked.co/directory/funding/seed/page/62"
+    },
+    {
+        "startup": {
+            "name": "Latest Startup",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 12.0,
+            "date": "2026-09-07"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://entrackr.com/"
     }
 ]
