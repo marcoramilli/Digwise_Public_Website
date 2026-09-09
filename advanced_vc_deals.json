@@ -20508,5 +20508,430 @@
             }
         ],
         "source_url": "https://raisingeurope.substack.com/p/5-european-tech-companies-you-need-ea9"
+    },
+    {
+        "startup": {
+            "name": "After Raising",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 1.1,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://entarabi.com/en/2026/09/after-raising-1-1-million-saudi-arabias-fittin/"
+    },
+    {
+        "startup": {
+            "name": "Perplexity",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 1720.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://tracxn.com/d/companies/perplexity/__V2BE-5ihMWJ1hNb2_u1W7Gry25JzPFCBg-iNWi94XI8/funding-and-investors"
+    },
+    {
+        "startup": {
+            "name": "Aaa C(H+A)Rm",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 4.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thesaasnews.com/news/aaa-c-h-a-rm-raises-4m-seed/"
+    },
+    {
+        "startup": {
+            "name": "Fundraising News",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 18.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://financialit.net/news/fundraising-news/pomelo-pay-raises-us10-million-series-round-led-inference-partners-fuel-global/1006?page=6"
+    },
+    {
+        "startup": {
+            "name": "Govt Releases",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 0.7,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thenassauguardian.com/news/govt-releases-more-than-700k-in-junkanoo-seed-funding/article_5e6aab17-3d94-448a-9847-275ec3cea45e.html"
+    },
+    {
+        "startup": {
+            "name": "Finnish Creoir",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 2.5,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://arcticstartup.com/creoir-raises-seed-funding/"
+    },
+    {
+        "startup": {
+            "name": "Sav",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 3.5,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://theaiinsider.tech/2026/09/08/sav-closes-3-5m-pre-series-a-to-expand-ai-driven-financial-platform-for-global-expats/"
+    },
+    {
+        "startup": {
+            "name": "Alleywatch Startup",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 300.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.alleywatch.com/2026/09/the-alleywatch-startup-daily-funding-report-9-8-2026/"
+    },
+    {
+        "startup": {
+            "name": "Moonwalk Biosciences",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 70.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.bioxconomy.com/investment/moonwalk-biosciences-glides-into-clinic-with-70m-series-b-funding"
+    },
+    {
+        "startup": {
+            "name": "Exploration Company",
+            "nationality": "Unknown",
+            "sector": "Mobility / Logistics",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 450.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.ufofeed.com/293831/the-exploration-company-raises-450-million-in-series-c-funding/"
+    },
+    {
+        "startup": {
+            "name": "Exploration Company:",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 450.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.trendingtopics.eu/exploration-company-450-million-dollar/"
+    },
+    {
+        "startup": {
+            "name": "French Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 3000.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.eu-startups.com/2026/09/french-ai-company-mistral-raises-e3-billion-series-d-led-by-samsung-at-over-e21-billion-valuation"
+    },
+    {
+        "startup": {
+            "name": "San Diego",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 7.5,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://americanbazaaronline.com/2026/09/08/san-diego-ai-startup-ollie-secures-7-5-million-in-seed-funding-487752/"
+    },
+    {
+        "startup": {
+            "name": "Empirik Spins",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 21.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://theaiinsider.tech/2026/09/08/empirik-spins-out-with-21m-to-build-ai-tool-for-predicting-infrastructure-outages/"
+    },
+    {
+        "startup": {
+            "name": "French Fintech",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 3.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.crowdfundinsider.com/2026/09/307786-french-fintech-firm-outline-secures-new-funding-for-ai-enabled-financial-planning-solutions/"
+    },
+    {
+        "startup": {
+            "name": "Forus",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 150.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://theaiinsider.tech/2026/09/08/forus-raises-150m-at-a-3b-valuation-as-its-ai-network-becomes-how-medicine-reaches-patients/"
+    },
+    {
+        "startup": {
+            "name": "Mistral",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 3000.0,
+            "date": "2026-09-09"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/"
     }
 ]
