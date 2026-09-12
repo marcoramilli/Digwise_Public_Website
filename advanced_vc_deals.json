@@ -21833,5 +21833,130 @@
             }
         ],
         "source_url": "https://cioinfluence.com/machine-learning/bynario-raises-funding-after-ai-powered-research-uncovered-critical-apple-vulnerabilities/"
+    },
+    {
+        "startup": {
+            "name": "Escapesquid Pursues",
+            "nationality": "Unknown",
+            "sector": "Technology (General)",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 2.5,
+            "date": "2026-09-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "http://www.prnewswire.com/news-releases/escapesquid-pursues-2-5-million-seed-round-to-scale-virtual-to-destination-fitness-and-travel-platform-302876690.html"
+    },
+    {
+        "startup": {
+            "name": "Piston",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 15.0,
+            "date": "2026-09-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.tribuneindia.com/news/advertorial-disclaimer/piston-raises-usd-15-million-to-scale-the-infrastructure-layer-for-logistics-commerce"
+    },
+    {
+        "startup": {
+            "name": "Aqua",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 15.0,
+            "date": "2026-09-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thesaasnews.com/news/aqua-raises-15m-series-a/"
+    },
+    {
+        "startup": {
+            "name": "Payments Technology",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 15.0,
+            "date": "2026-09-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://retailtechinnovationhub.com/home/2026/9/10/payments-technology-firm-piston-raises-15-million-in-series-a-funding-round-to-build-out-us-network"
+    },
+    {
+        "startup": {
+            "name": "Arlequin Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 28.0,
+            "date": "2026-09-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thesaasnews.com/news/arlequin-ai-raises-28m-series-a/"
     }
 ]
