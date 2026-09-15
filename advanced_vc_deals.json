@@ -22033,5 +22033,330 @@
             }
         ],
         "source_url": "https://www.crowdfundinsider.com/2026/09/309606-chimes-590m-stride-buy-leads-last-weeks-fundings-and-acquisitions/"
+    },
+    {
+        "startup": {
+            "name": "Custodea",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 0.35,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thesaasnews.com/news/custodea-raises-350000-seed/"
+    },
+    {
+        "startup": {
+            "name": "Synapse Analytics",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 13.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://thecondia.com/partech-synapse-analytics-series-a/"
+    },
+    {
+        "startup": {
+            "name": "Chift",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 10.5,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://tech.eu/2026/09/14/chift-raises-eur105m-series-a-to-scale-financial-connectivity-across-europe"
+    },
+    {
+        "startup": {
+            "name": "Series A",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 1200.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://postround.substack.com/p/series-a-activity-week-of-september-6b7"
+    },
+    {
+        "startup": {
+            "name": "Kaiko",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 110.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.coindesk.com/business/2026/09/14/kaiko-extends-series-b-funding-round-to-usd110-million-with-s-and-p-global-bnp-paribas"
+    },
+    {
+        "startup": {
+            "name": "S&P Global",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 110.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://bitcoinethereumnews.com/crypto/sp-global-to-lead-crypto-data-provider-kaikos-110-million-series-b-round/"
+    },
+    {
+        "startup": {
+            "name": "Kaiko Funding",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 110.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://en.cryptonomist.ch/2026/09/14/kaiko-funding-extension/"
+    },
+    {
+        "startup": {
+            "name": "Kaiko Extends",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 110.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://grafa.com/en/news/crypto/kaiko-extends-series-b-to-us-110m"
+    },
+    {
+        "startup": {
+            "name": "Kaiko Series",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 110.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://bitcoinethereumnews.com/tech/kaiko-series-b-hits-110m-in-sp-global-led-round/"
+    },
+    {
+        "startup": {
+            "name": "Qupital",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 300.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://vir.com.vn/qupital-secures-300-million-dollars-in-series-c-funding-160724.html"
+    },
+    {
+        "startup": {
+            "name": "Sweden'S Freya Industries",
+            "nationality": "Unknown",
+            "sector": "Cybersecurity / Defense",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 0.53,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://arcticstartup.com/freya-industries-raises-e532k/"
+    },
+    {
+        "startup": {
+            "name": "Tarabut",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 50.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://sharikatmubasher.com/media-hub/news/21574326/tarabut-raises-50mn-to-accelerate-embedded-finance-in-saudi-arabia"
+    },
+    {
+        "startup": {
+            "name": "Monthly Funding",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 100.0,
+            "date": "2026-09-15"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://smartbranding.com/monthly-funding-report-august-2026-funded-startups/"
     }
 ]
