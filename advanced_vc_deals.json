@@ -23733,5 +23733,255 @@
             }
         ],
         "source_url": "https://www.cnbctv18.com/technology/this-indian-startup-raised-1-2-million-betting-people-will-pay-to-stop-doomscrolling-19993158.htm"
+    },
+    {
+        "startup": {
+            "name": "Fize Medical",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 20.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://medicalbuyer.co.in/fize-medical-announces-first-close-of-usd-20m-series-b-funding/"
+    },
+    {
+        "startup": {
+            "name": "Ryft",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 20.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.electronicpaymentsinternational.com/news/ryft-fundraising/"
+    },
+    {
+        "startup": {
+            "name": "Insurtech Company",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 45.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.lifeinsuranceinternational.com/news/insurtech-luzern-risk-45m-series-b/"
+    },
+    {
+        "startup": {
+            "name": "Scan And",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 100.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://vatortv.substack.com/p/scan-and-walmart-launch-medicare"
+    },
+    {
+        "startup": {
+            "name": "Buy And",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 741.84,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://forgeglobal.com/arize-ai_stock/"
+    },
+    {
+        "startup": {
+            "name": "Ai Startup Mantic",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 25.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.reuters.com/technology/ai-startup-mantic-raises-25-million-superhuman-forecasting-2026-09-18/"
+    },
+    {
+        "startup": {
+            "name": "Startup Builder",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 100.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://careeraheadonline.com/startup-builder-secures-100m-for-physical-ai-expansion"
+    },
+    {
+        "startup": {
+            "name": "Vantora",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 100.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://mezha.net/eng/news/798a496c_vantora_raises_-100/"
+    },
+    {
+        "startup": {
+            "name": "Autonomous Maritime",
+            "nationality": "Unknown",
+            "sector": "Mobility / Logistics",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 3.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://japanstartupobserver.substack.com/p/autonomous-maritime-tech-firm-eight"
+    },
+    {
+        "startup": {
+            "name": "Wellfound",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 24.0,
+            "date": "2026-09-19"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://tracxn.com/d/companies/wellfound/__QQvOZ4xWRkVdFdDxR54lxALmJCmDVVltYrp0WwIxudc"
     }
 ]
