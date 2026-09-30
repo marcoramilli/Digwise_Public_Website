@@ -24533,5 +24533,130 @@
             }
         ],
         "source_url": "https://www.thedp.com/article/2026/09/penn-new-startup-fund-faculty-innovation-announced-investments"
+    },
+    {
+        "startup": {
+            "name": "Bitcoin Infrastructure",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 6.0,
+            "date": "2026-09-30"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.wfmz.com/news/pr_newswire/pr_newswire_technology/bitcoin-infrastructure-company-voltage-announces-6-million-seed-round-led-by-trammell-venture-partners-with/article_6ef838b2-6d6c-5f42-9d77-2b48ffdfccc5.html"
+    },
+    {
+        "startup": {
+            "name": "Durable Workflow",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 20.0,
+            "date": "2026-09-30"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.chaincatcher.com/en/article/2293304"
+    },
+    {
+        "startup": {
+            "name": "Jeeves",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 110.0,
+            "date": "2026-09-30"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://phemex.com/news/article/jeeves-raises-110m-series-c-led-by-coinfund-to-expand-stablecoin-payment-infrastructure-98236"
+    },
+    {
+        "startup": {
+            "name": "Metaview",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 60.0,
+            "date": "2026-09-30"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://techrseries.com/recruitment-and-on-boarding/metaview-raises-60m-series-c-to-lead-the-shift-to-agentic-recruiting/"
+    },
+    {
+        "startup": {
+            "name": "Fintech Startup Tundr",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 11.6,
+            "date": "2026-09-30"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.leadersleague.com/en/news/fintech-startup-tundr-secures-eur11-6-million-series-a-funding"
     }
 ]
