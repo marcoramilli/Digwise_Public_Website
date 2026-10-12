@@ -28333,5 +28333,130 @@
             }
         ],
         "source_url": "https://manufacturing.economictimes.indiatimes.com/amp/news/hi-tech/sequoia-backed-chip-startup-nuvacore-raising-funds-at-about-a-2-5-billion-valuation-sources-say/134850836"
+    },
+    {
+        "startup": {
+            "name": "Tech Startup Signsplit",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 400.0,
+            "date": "2026-10-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.techtimes.com/articles/328893/20261010/tech-startup-signsplit-raises-400-million-w-group-seed-round.htm"
+    },
+    {
+        "startup": {
+            "name": "Klarent",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 7.13,
+            "date": "2026-10-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.sesamers.com/funding/klarent-raises-7-13m-seed-mosaic-ventures/"
+    },
+    {
+        "startup": {
+            "name": "Saudi Auto",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 12.0,
+            "date": "2026-10-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://thestartupscene.me/INVESTMENTS/Saudi-Auto-Parts-Startup-Autobia-Raises-12-Million-Series-A"
+    },
+    {
+        "startup": {
+            "name": "Robot Training",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 60.0,
+            "date": "2026-10-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://en.wowtale.net/2026/10/11/235450/"
+    },
+    {
+        "startup": {
+            "name": "Weekly Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 7500.0,
+            "date": "2026-10-12"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://aifundingtracker.com/weekly-ai-funding-typesafe-ai-hits-7-5b-manus-ai-raises-500m-oct-7-oct-12-26/"
     }
 ]
