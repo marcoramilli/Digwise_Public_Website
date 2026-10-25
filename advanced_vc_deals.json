@@ -32958,5 +32958,105 @@
             }
         ],
         "source_url": "https://www.hpcwire.com/bigdatawire/this-just-in/tractian-raises-130m-series-d-to-expand-ai-for-industrial-asset-health/"
+    },
+    {
+        "startup": {
+            "name": "Saudi Ghanem",
+            "nationality": "Unknown",
+            "sector": "Technology (General)",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 1.5,
+            "date": "2026-10-25"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://jawlah.co/en/67016"
+    },
+    {
+        "startup": {
+            "name": "Saudi Proptech Ghanem",
+            "nationality": "Unknown",
+            "sector": "Technology (General)",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 1.5,
+            "date": "2026-10-25"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://waya.media/saudi-proptech-ghanem-raises-usd-1-5m-in-pre-seed-extension/"
+    },
+    {
+        "startup": {
+            "name": "Readily",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 11.0,
+            "date": "2026-10-25"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://coverager.com/readily-raises-11-million-series-a/"
+    },
+    {
+        "startup": {
+            "name": "Announcements On",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 6.4,
+            "date": "2026-10-25"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.exchange4media.com/announcements-news.html/page/4?page=10"
     }
 ]
