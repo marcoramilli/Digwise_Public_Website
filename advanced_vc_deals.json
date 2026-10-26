@@ -33058,5 +33058,30 @@
             }
         ],
         "source_url": "https://www.exchange4media.com/announcements-news.html/page/4?page=10"
+    },
+    {
+        "startup": {
+            "name": "Dallas Startup",
+            "nationality": "Unknown",
+            "sector": "Cybersecurity / Defense",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 200.0,
+            "date": "2026-10-26"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://dallasexpress.com/business-markets/dallas-startup-secures-200-million-for-genetically-enhanced-working-dogs/"
     }
 ]
