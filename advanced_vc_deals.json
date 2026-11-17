@@ -43408,5 +43408,605 @@
             }
         ],
         "source_url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+    },
+    {
+        "startup": {
+            "name": "Bevado",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 10.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.joplinglobe.com/region/national_business/bevado-raises-10-million-seed-to-build-ai-agents-that-remember-every-resident-and-learn/article_e39929d9-10df-509f-95f5-bd4b1b06b874.html"
+    },
+    {
+        "startup": {
+            "name": "Seawolf Therapeutics",
+            "nationality": "Unknown",
+            "sector": "Mobility / Logistics",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 100.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.biospace.com/press-releases/seawolf-therapeutics-debuts-with-100-million-to-advance-dna-based-therapeutics"
+    },
+    {
+        "startup": {
+            "name": "Clean Seed",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 1.2,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://seekingalpha.com/news/4673302-clean-seed-capital-group-announces-12m-financing-led-by-insiders-major-shareholders"
+    },
+    {
+        "startup": {
+            "name": "Stoa",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 3.5,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://casrai.org/news/stoa-three-point-five-million-ai-construction-funding-2026"
+    },
+    {
+        "startup": {
+            "name": "Alecto",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 20.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://siliconangle.com/2026/11/16/alecto-raises-20m-seed-funding-to-make-uk-property-law-more-accessible-to-consumers-with-ai/"
+    },
+    {
+        "startup": {
+            "name": "Bharat Semi’S",
+            "nationality": "Unknown",
+            "sector": "Technology (General)",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 24.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.analyticsinsight.net/news/bharat-semis-usd-24-million-seed-round-signals-growing-interest-in-indias-deep-tech-sector"
+    },
+    {
+        "startup": {
+            "name": "Count",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 6.5,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.finsmes.com/2026/11/count-raises-6-5m-in-seed-funding.html"
+    },
+    {
+        "startup": {
+            "name": "Seawolf Emerges",
+            "nationality": "Unknown",
+            "sector": "Mobility / Logistics",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 100.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://allsci.com/news/biotech/seawolf-therapeutics-raises-usd-100m-series-to/"
+    },
+    {
+        "startup": {
+            "name": "Corma Reaches",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 1000.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.zetik.com/news/article/story_id-p008-232726"
+    },
+    {
+        "startup": {
+            "name": "Ethiopia'S Dodai",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 16.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://techmoran.com/2026/11/16/ethiopias-dodai-raises-series-a-funding-to-16-million-as-japanese-investors-bet-on-electric-motorcycles/"
+    },
+    {
+        "startup": {
+            "name": "Remedy Robotics",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 62.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://aiweekly.co/alerts/remedy-robotics-raises-62m-series-b-to-push-n1-toward-fda"
+    },
+    {
+        "startup": {
+            "name": "Neurosterix",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 105.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://ggba.swiss/en/neurosterix-raises-usd-105-million-in-series-b-funding/"
+    },
+    {
+        "startup": {
+            "name": "Lending Fintech Olyv",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 6.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.business-standard.com/amp/companies/start-ups/lending-fintech-olyv-raises-6-million-targets-1-billion-aum-by-fy29-126111601416_1.html"
+    },
+    {
+        "startup": {
+            "name": "Expat'S Remote",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 92.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.startupdaily.net/topic/funding/expats-remote-surgery-medtech-scores-92-million-series-b-for-stroke-care/"
+    },
+    {
+        "startup": {
+            "name": "Numa",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 45.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://pulse2.com/numa-raises-45-million-series-c-as-dealership-ai-revenue-triples/"
+    },
+    {
+        "startup": {
+            "name": "Chip Startup Fractile",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 720.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://evertiq.com/news/2026-11-16-uk-chip-startup-fractile-raises-720-million-in-series-c"
+    },
+    {
+        "startup": {
+            "name": "Tech Supplier Owner.Com",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 120.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.restaurantbusinessonline.com/technology/tech-supplier-ownercom-raises-120m-giving-it-1b-valuation&gsessionid=s95du34nlhmG0oZiIDUxmS4BqeH2Bb-WG7l-kpOqlmA3h3_MCF22ig"
+    },
+    {
+        "startup": {
+            "name": "8,941+ Series",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 30.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.vcbacked.co/series-a-startups"
+    },
+    {
+        "startup": {
+            "name": "Vumedi",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 140.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://hoodline.com/2026/11/oakland-s-vumedi-lands-140m-to-grow-ai-learning-tool-for-more-than-150-000-clinicians/"
+    },
+    {
+        "startup": {
+            "name": "Ai Startup Dreamteam",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 53.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.bloomberg.com/news/articles/2026-11-16/ai-startup-dreamteam-raises-capital-to-challenge-salesforce-sap"
+    },
+    {
+        "startup": {
+            "name": "Morgan Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 3.65,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://startuprise.org/morgan-ai-secures-3-65-mn-to-automate-insolvency-and-restructuring-processes/"
+    },
+    {
+        "startup": {
+            "name": "Bedrock Energy",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 24.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://finway.com.ua/en/bedrock-energy-raises-million-for/"
+    },
+    {
+        "startup": {
+            "name": "Cybersecurity Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 1000.0,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/"
+    },
+    {
+        "startup": {
+            "name": "An Eric Trump",
+            "nationality": "Unknown",
+            "sector": "Cybersecurity / Defense",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 4.6,
+            "date": "2026-11-17"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://timesofindia.indiatimes.com/world/us/an-eric-trump-backed-military-robot-startup-missed-payroll-on-october-30-its-ceo-had-borrowed-4-6-million-from-the-company-to-purchase-a-california-home/articleshow/135886353.cms"
     }
 ]
