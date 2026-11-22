@@ -46183,5 +46183,205 @@
             }
         ],
         "source_url": "https://www.techloy.com/week-47-africa-middle-east-startup-funding/"
+    },
+    {
+        "startup": {
+            "name": "Sunflower Seeds",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 0.5,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.herald-dispatch.com/features_entertainment/sunflower-seeds-sets-goal-to-reach-500k-in-2027/article_d92e8332-1413-44e4-882c-fb888ddc1dec.html"
+    },
+    {
+        "startup": {
+            "name": "Security Event:",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 305.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+    },
+    {
+        "startup": {
+            "name": "Province",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 10.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.timminstoday.com/local-news/province-announces-10m-for-northern-film-and-tv-13043401"
+    },
+    {
+        "startup": {
+            "name": "‘Grand Theft",
+            "nationality": "Unknown",
+            "sector": "E-commerce / Retail",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 2360.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.cp24.com/news/entertainment/2026/11/20/sales-of-grand-theft-auto-vi-skyrocket-as-the-series-makes-its-return-after-13-year-absence/"
+    },
+    {
+        "startup": {
+            "name": "Variational Completed",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 110.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.chaincatcher.com/en/article/2306996"
+    },
+    {
+        "startup": {
+            "name": "He Left",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 6000.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://timesofindia.indiatimes.com/education/news/he-left-high-school-at-16-with-no-degree-by-27-his-nuclear-reactor-powered-an-nvidia-ai-chip-and-hit-a-6-billion-valuation/articleshow/136021776.cms"
+    },
+    {
+        "startup": {
+            "name": "Indian Startup",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 290.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://techstory.in/indian-startup-funding-surges-826-to-290-mn-as-23-startups-raise-capital-this-week/"
+    },
+    {
+        "startup": {
+            "name": "{Funding Alert} Vituscare",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 3.0,
+            "date": "2026-11-22"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.indianretailer.com/news/funding-alert-vituscare-raises-3-mn-strengthen-technology-and-expand-healthcare-network"
     }
 ]
