@@ -46558,5 +46558,705 @@
             }
         ],
         "source_url": "https://qubitil.substack.com/p/qubit-community-weekly-newsletter-f16"
+    },
+    {
+        "startup": {
+            "name": "Marlowe",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 277.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://runtimewire.com/article/marlowe-raises-277m-seed-at-a-1-15b-valuation-to-run-inference-on-non-nvidia"
+    },
+    {
+        "startup": {
+            "name": "Q.Security Launches",
+            "nationality": "Unknown",
+            "sector": "Cybersecurity / Defense",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 11.5,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://pulse2.com/q-security-launches-with-11-5-million-to-help-enterprises-modernize-cryptography/"
+    },
+    {
+        "startup": {
+            "name": "Embo",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 110.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://huggingnews.com/startups/embo-raises-110m-in-largest-robotics-seed-round-in-history-f114e77d"
+    },
+    {
+        "startup": {
+            "name": "Seed Startups",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 2.6,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.rocketsdr.ai/funded-startups/seed"
+    },
+    {
+        "startup": {
+            "name": "Financialcontent",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 16.1,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://markets.financialcontent.com/stocks/article/bizwire-2026-11-23-apricity-announces-161-million-series-a-funding-to-bring-robotic-assistance-to-diagnostic-ultrasound"
+    },
+    {
+        "startup": {
+            "name": "Apricity",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 16.1,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.01net.it/apricity-announces-16-1-million-series-a-funding-to-bring-robotic-assistance-to-diagnostic-ultrasound/"
+    },
+    {
+        "startup": {
+            "name": "Llamaindex Case",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Seed",
+            "raised_amount_millions": 8.5,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://artificialintelligencefiles.com/ai-case-study/llamaindex-gpt-index-to-enterprise-ai-case-study&gsessionid=Dn_YqKn3agvzDNrx_arLlmX_WEANSbyEiiNgmxXF0ogTyVszj38HwQ"
+    },
+    {
+        "startup": {
+            "name": "European Defense",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 70.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://theaiinsider.tech/2026/11/23/european-defense-ai-company-agon-raises-70m-in-series-a-funding-to-develop-autonomous-systems-technology/"
+    },
+    {
+        "startup": {
+            "name": "Exclusive: Princeton",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 32.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://njbiz.com/aidenai-princeton-ai-funding-series-a/"
+    },
+    {
+        "startup": {
+            "name": "Agon",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 70.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://app.fundz.net/fundings/agon-funding-round-series-a-d82c96"
+    },
+    {
+        "startup": {
+            "name": "Stablecoin Fx",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 30.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.finextra.com/newsarticle/48797/stablecoin-fx-platform-codex-raises-30m"
+    },
+    {
+        "startup": {
+            "name": "Jordanian Startup Invoiceq",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 5.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://entarabi.com/en/2026/11/jordanian-startup-invoiceq-raises-5-million-in-series-a-funding-to-expand-across-mena/"
+    },
+    {
+        "startup": {
+            "name": "Maybern",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 50.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.thesaasnews.com/news/maybern-raises-50m-series-b/"
+    },
+    {
+        "startup": {
+            "name": "Why Did",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 75.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.analyticsinsight.net/cryptocurrency-analytics-insight/why-did-fomo-raise-usd-75-million-for-its-crypto-trading-app"
+    },
+    {
+        "startup": {
+            "name": "Satsure",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 21.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.finsmes.com/2026/11/satsure-raises-approx-usd21m-in-first-close-of-series-b-funding.html"
+    },
+    {
+        "startup": {
+            "name": "Olyv Raised",
+            "nationality": "Unknown",
+            "sector": "FinTech / InsurTech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 6.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.finsmes.com/2026/11/olyv-raised-approx-6m-in-additional-series-b-funding.html"
+    },
+    {
+        "startup": {
+            "name": "From Dropping",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 6000.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.educationtimes.com/learning/from-dropping-out-of-school-at-16-to-building-a-6-billion-startup-at-27-how-isaiah-taylor-got-nvidias-attention/articleshow/136089125.cms"
+    },
+    {
+        "startup": {
+            "name": "Vertices Partners",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series B",
+            "raised_amount_millions": 13.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.pninews.com/vertices-partners-advises-live2-ai-on-usd-13mn-pre-series-b-funding-round/"
+    },
+    {
+        "startup": {
+            "name": "Satellite Maker Myriota",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 60.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.startupdaily.net/topic/funding/satellite-maker-myriota-lands-first-60-million-in-series-c-build/"
+    },
+    {
+        "startup": {
+            "name": "Adelaide Satellite",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 60.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.smartcompany.com.au/startupsmart/adelaide-satellite-maker-myriota-raises-60-million-in-100-days/"
+    },
+    {
+        "startup": {
+            "name": "Myriota",
+            "nationality": "Unknown",
+            "sector": "SaaS / Cloud / Enterprise",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series C",
+            "raised_amount_millions": 60.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.capitalbrief.com/briefing/myriota-secures-60m-in-first-series-c-close-to-scale-satellite-connectivity-94180302-c2c8-4e18-9001-0d514b61b808/"
+    },
+    {
+        "startup": {
+            "name": "Sierra Doubles",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 30000.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
+    },
+    {
+        "startup": {
+            "name": "Sierra",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 1750.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.unite.ai/sierra-raises-1-75b-in-series-f-funding-at-30b-valuation/"
+    },
+    {
+        "startup": {
+            "name": "Defense Ai",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 70.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.bloomberg.com/news/articles/2026-11-23/defense-ai-startup-agon-raises-70-million-series-a-from-vcs-ex-sequoia-boss"
+    },
+    {
+        "startup": {
+            "name": "German Startup Playbook",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 8.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.eu-startups.com/2026/11/german-startup-playbook-secures-e8-million-to-help-pharma-companies-deploy-ai-safely"
+    },
+    {
+        "startup": {
+            "name": "Theseus Robotics",
+            "nationality": "Unknown",
+            "sector": "Artificial Intelligence",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Venture - Unknown",
+            "raised_amount_millions": 0.46,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.eu-startups.com/2026/11/theseus-robotics-secures-e455k-to-put-robots-to-work-in-supermarkets-across-europe-and-us"
+    },
+    {
+        "startup": {
+            "name": "\"We Got",
+            "nationality": "Unknown",
+            "sector": "Healthcare / Biotech",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 5.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://mena.entrepreneur.com/starting-a-business/we-got-funded-jordan-based-invoiceq-raises-us5-million-in-series-a-round"
+    },
+    {
+        "startup": {
+            "name": "Morocco Emerges",
+            "nationality": "Unknown",
+            "sector": "ClimateTech / Energy",
+            "estimated_revenue_at_investment": "Unknown"
+        },
+        "leadership": {
+            "founder_or_ceo_name": "Unknown",
+            "founder_or_ceo_nationality": "Unknown"
+        },
+        "deal_details": {
+            "round_type": "Series A",
+            "raised_amount_millions": 48.0,
+            "date": "2026-11-24"
+        },
+        "investors": [
+            {
+                "fund_name": "Unknown",
+                "fund_nationality": "Unknown",
+                "fund_manager_involved": "Unknown"
+            }
+        ],
+        "source_url": "https://www.moroccoworldnews.com/2026/11/347743/morocco-emerges-as-leading-contender-among-africas-next-major-startup-markets/"
     }
 ]
